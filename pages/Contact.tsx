@@ -4,7 +4,7 @@ import handshake from "../assets/handshake.gif";
 
 function Contact() {
   return (
-    <div id={styles.contactPage}>
+    <div id="about" className={styles.contact}>
       <div id={styles.handshake}>
         <Image priority={true} src={handshake} alt="handshake" />
       </div>
