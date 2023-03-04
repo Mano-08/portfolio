@@ -4,11 +4,10 @@ import styles from "../styles/Navbar.module.scss";
 
 function Navbar() {
   const [menu, setMenu] = useState(false);
+
   return (
     <nav id={styles.navbar}>
-      <div>
-        <span>MANO.</span>
-      </div>
+      <span>MANO.</span>
       <div id={styles.menu}>
         <span
           onClick={() => {
@@ -24,21 +23,13 @@ function Navbar() {
           menu
             ? { transform: "translateY(0)", transition: "1s ease-in-out" }
             : {
-                transform: "translateY(-101vh)",
+                transform: "translateY(-110vh)",
                 transition: "0.8s ease-in-out",
               }
         }
       >
         <div
           id={styles.navList}
-          style={
-            menu
-              ? { transform: "translateY(0)", transition: "1.2s ease-in-out" }
-              : {
-                  transform: "translateY(-101vh)",
-                  transition: "1.3s ease-in-out",
-                }
-          }
           onClick={() => {
             setMenu(false);
           }}
@@ -49,7 +40,7 @@ function Navbar() {
             <span>M</span>
             <span>E</span>
           </Link>
-          <Link href="#" className={menu ? styles.navLink : ""}>
+          <Link href="#about" className={menu ? styles.navLink : ""}>
             <span>A</span>
             <span>B</span>
             <span>O</span>
@@ -90,6 +81,20 @@ function Navbar() {
           </Link>
         </div>
       </div>
+      <div
+        id={styles.navDesigner}
+        style={
+          menu
+            ? {
+                transform: "translateY(0vh)",
+                transition: "0.8s ease-in-out",
+              }
+            : {
+                transform: "translateY(-101vh)",
+                transition: "0.9s ease-in-out",
+              }
+        }
+      />
     </nav>
   );
 }

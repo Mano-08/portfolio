@@ -1,5 +1,148 @@
-#home {
-  min-height: 100vh;
+.home {
+  min-height: 101vh;
   width: 100%;
+  padding: 10vh 6%;
+  color: white;
+  font-family: "Krona One", sans-serif;
   background-color: rgb(0, 0, 0);
+}
+
+#homeWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 80vh;
+}
+
+@keyframes domaintitle {
+  0% {
+    transform: translateY(3rem) skewY(0deg);
+  }
+  3% {
+    transform: translateY(0rem) skewY(0deg);
+  }
+  25% {
+    transform: translateY(0rem) skewY(0deg);
+  }
+  28% {
+    transform: translateY(-4rem) skewY(0deg);
+  }
+  72% {
+    transform: translateY(-4rem) skewY(0deg);
+  }
+  75% {
+    transform: translateY(-8rem) skewY(0deg);
+  }
+  97% {
+    transform: translateY(-8rem) skewY(0deg);
+  }
+  100% {
+    transform: translateY(-12rem) skewY(0deg);
+  }
+}
+
+@keyframes domainrole {
+  0% {
+    transform: translateY(3rem) skewY(0deg);
+  }
+  3% {
+    transform: translateY(0rem) skewY(0deg);
+  }
+  47% {
+    transform: translateY(0rem) skewY(0deg);
+  }
+  50% {
+    transform: translateY(-4rem) skewY(0deg);
+  }
+  72% {
+    transform: translateY(-4rem) skewY(0deg);
+  }
+  75% {
+    transform: translateY(-8rem) skewY(0deg);
+  }
+  97% {
+    transform: translateY(-8rem) skewY(0deg);
+  }
+  100% {
+    transform: translateY(-12rem) skewY(5deg);
+  }
+}
+#homeIntro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  span {
+    display: inline-block;
+  }
+  .role {
+    overflow: hidden;
+    height: 3rem;
+    font-size: 3rem;
+    position: relative;
+    div {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+    }
+    #domainTitle {
+      transform: translateY(3rem) skewY(0deg);
+      animation: domaintitle 10s 0.1s infinite;
+    }
+    #domainRole {
+      transform: translateY(3rem) skewY(0deg);
+      animation: domainrole 10s 0.2s infinite;
+    }
+  }
+}
+
+#homeMano {
+  font-size: 8rem;
+  overflow: hidden;
+  height: 8.1rem;
+  margin-bottom: 30px;
+  @keyframes nameSlideUp {
+    0% {
+      transform: translateY(8rem) skewY(5deg);
+    }
+    100% {
+      transform: translateY(0) skewY(0deg);
+    }
+  }
+  #textMANO {
+    transform: translateY(8rem) skewY(5deg);
+    animation: nameSlideUp 0.8s 0s forwards;
+  }
+}
+
+#homeMano:hover {
+  #textMANO {
+    span {
+      color: rgb(242, 174, 0);
+      transition: 0.2s ease-in-out;
+    }
+  }
+}
+@keyframes imageReveal {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 55vh;
+  }
+}
+#homeImage {
+  margin: auto 0;
+  position: relative;
+  overflow: hidden;
+  img {
+    height: 50vh;
+    width: auto;
+  }
+  div {
+    position: absolute;
+    height: 50vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    animation: imageReveal 1s 0s forwards;
+  }
 }

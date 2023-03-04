@@ -13,8 +13,6 @@
   display: flex;
   justify-content: center;
   background-color: black;
-  position: relative;
-  z-index: 5;
   align-items: center;
   img {
     width: 60%;
@@ -39,29 +37,23 @@
   color: white;
   font-size: 5rem;
   margin: auto 0;
+  @keyframes slideUp {
+    0% {
+      transform: translateY(4rem) skew(0, 6deg);
+    }
+    100% {
+      transform: translateY(0) skew(0, 0);
+    }
+  }
   p {
     font-family: "Krona One", sans-serif;
     padding-left: 2rem;
     margin: 5px 0;
+    transform: translateY(4rem) skew(0, 10deg);
+    animation: slideUp 1s 0s forwards;
     span {
       display: inline-block;
       transition: 0.3s ease-in-out;
-    }
-  }
-
-  @keyframes slideRight {
-    0% {
-      transform: translateX(-50vw);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
-
-  @for $i from 1 through 3 {
-    p:nth-child(#{$i}) {
-      transform: translateX(-40vw);
-      animation: slideRight 1s #{$i * 0.1}s forwards;
     }
   }
 
