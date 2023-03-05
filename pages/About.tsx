@@ -5,10 +5,19 @@ import { keyframes } from "@emotion/react";
 
 const customAnimation = keyframes`
   from {
-   transform: translateY(4rem) skewY(1deg);
+   transform: translateY(5rem);
   }
   to {
-    transform: translateY(0rem) skewY(0deg);
+    transform: translateY(0rem);
+  }
+`;
+
+const customAnimation2 = keyframes`
+  from {
+   transform: translateY(3rem);
+  }
+  to {
+    transform: translateY(0rem);
   }
 `;
 
@@ -17,15 +26,29 @@ function About() {
     <div id="about" className={styles.about}>
       <div id={styles.aboutTitle}>
         <Reveal triggerOnce duration={500} keyframes={customAnimation}>
-          <span>ABOUT</span>
+          <span
+            style={{
+              transform: "translateY(5rem)",
+            }}
+          >
+            ABOUT
+          </span>
         </Reveal>
       </div>
-      <Reveal triggerOnce duration={500} keyframes={customAnimation}>
-        <p style={{ color: "white" }}>
-          A computer science student from Canada. I aim to deepen my
-          understanding in various areas of technology and product development.
-        </p>
-      </Reveal>
+      <div id={styles.aboutContent}>
+        <Reveal
+          triggerOnce
+          delay={100}
+          duration={300}
+          keyframes={customAnimation2}
+        >
+          <span>Hello! I am Mano and I am a</span>
+          <span>Computer Science student based</span>
+          <span>India. I work towards deepening</span>
+          <span> my knowledge in technology and</span>
+          <span> building scalable solutions.</span>
+        </Reveal>
+      </div>
     </div>
   );
 }
