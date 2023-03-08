@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Biryani:wght@200;300;400&family=Epilogue:wght@300;400;500;600&family=Henny+Penny&family=Krona+One&family=Lexend:wght@200;300;400;500;600;700&family=Poppins:wght@300;800&family=Raleway:wght@300;400;600;800&family=Sora:wght@200;300;400;500;600&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
@@ -11,7 +12,14 @@ body {
   scroll-behavior: smooth;
   max-width: 100vw;
   overflow-x: hidden;
-  font-family: "Biryani", sans-serif;
+  font-family: "Raleway", sans-serif;
+  /* font-family: "Epilogue", sans-serif; */
+  /* font-family: "Sora", sans-serif; */
+  /* font-family: "Roboto", sans-serif; */
+  /* font-family: "Krona One", sans-serif; */
+  /* font-family: "Biryani", sans-serif; */
+  /* font-family: "Lexend", sans-serif;
+  font-weight: 500; */
 }
 
 a {

@@ -1,6 +1,6 @@
 import styles from "../styles/Contact.module.scss";
 import Image from "next/image";
-import handshake from "../assets/handshake.gif";
+import handshake from "../assets/gifs/handshake.gif";
 
 function Contact() {
   return (

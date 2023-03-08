@@ -39,17 +39,16 @@
   margin: auto 0;
   @keyframes slideUp {
     0% {
-      transform: translateY(4rem) skew(0, 6deg);
+      transform: translateY(4rem);
     }
     100% {
-      transform: translateY(0) skew(0, 0);
+      transform: translateY(0);
     }
   }
   p {
-    font-family: "Krona One", sans-serif;
     padding-left: 2rem;
     margin: 5px 0;
-    transform: translateY(4rem) skew(0, 10deg);
+    transform: translateY(4rem);
     animation: slideUp 1s 0s forwards;
     span {
       display: inline-block;

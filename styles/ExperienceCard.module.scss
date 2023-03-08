@@ -1,0 +1,63 @@
+.expCard {
+  width: 80vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+  font-weight: 200;
+  p {
+    line-height: 1.6;
+  }
+}
+
+.expCardImg {
+  width: 15vw;
+  height: auto;
+  padding: 3vh 0;
+  position: relative;
+  img {
+    width: 60%;
+    height: auto;
+  }
+}
+
+.designerArrow {
+  position: absolute;
+  top: 7vh;
+  right: 0;
+  border-top: 2vh solid transparent;
+  border-bottom: 2vh solid transparent;
+  border-right: 2vh solid yellow;
+}
+
+.expCardContent {
+  padding: 3vh 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  border-left: 7px solid yellow;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+.contextElem {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.role {
+  font-size: 3rem;
+}
+
+.company {
+  font-size: 1.7rem;
+}
+
+.tools {
+  font-size: 1.7rem;
+  color: rgba(255, 255, 255, 0.424);
+}
+
+.context {
+}

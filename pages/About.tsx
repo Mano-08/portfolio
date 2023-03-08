@@ -43,7 +43,7 @@ function About() {
           keyframes={customAnimation2}
         >
           <span>Hello! I am Mano and I am a</span>
-          <span>Computer Science student based</span>
+          <span>Computer Science student from</span>
           <span>India. I work towards deepening</span>
           <span> my knowledge in technology and</span>
           <span> building scalable solutions.</span>

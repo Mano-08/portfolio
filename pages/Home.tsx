@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
-import image from "../assets/handshake.gif";
+import image from "../assets/gifs/handshake.gif";
 
 function Home() {
   return (
