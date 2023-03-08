@@ -7,15 +7,19 @@ function Navbar() {
 
   return (
     <nav id={styles.navbar}>
-      <span>MANO.</span>
+      <Link href="#home" scroll={false}>
+        <span>MANO.</span>
+      </Link>
       <div id={styles.menu}>
-        <span
-          onClick={() => {
-            setMenu(true);
-          }}
-        >
-          MENU
-        </span>
+        <Link href="#experience" scroll={false}>
+          <span>EXPERIENCE</span>
+        </Link>
+        <Link href="#projects" scroll={false}>
+          <span>PROJECTS</span>
+        </Link>
+        <Link href="#contact" scroll={false}>
+          <span>CONTACT</span>
+        </Link>
       </div>
       <div
         id={styles.navMenu}

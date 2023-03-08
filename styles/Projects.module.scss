@@ -1,0 +1,15 @@
+.projectsPage {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+  padding: 0 6%;
+}
+
+#projectTitle {
+  font-size: 5rem;
+  font-weight: 600;
+  span {
+    display: inline-block;
+  }
+}

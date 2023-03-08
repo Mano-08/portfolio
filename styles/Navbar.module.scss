@@ -33,6 +33,12 @@
   // background-color: rgb(115, 0, 168); violet theme
 }
 
+#menu {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
 #navDesigner {
   height: 100vh;
   width: 100%;

@@ -1,14 +1,13 @@
-import LandingPage from "./Home";
+import Home from "./Home";
 import Contact from "./Contact";
 import About from "./About";
 import Experience from "./Experience";
 import Projects from "./Projects";
 
-export default function Home() {
+export default function App() {
   return (
     <>
-      <LandingPage />
-      <About />
+      <Home />
       <Experience />
       <Projects />
       <Contact />

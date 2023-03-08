@@ -28,7 +28,7 @@ function Home() {
           </div>
         </div>
         <div id={styles.homeImage}>
-          <div />
+          <div id={styles.curtain} />
           <Image src={image} alt="" />
         </div>
       </div>

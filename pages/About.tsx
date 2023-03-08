@@ -2,6 +2,8 @@ import React from "react";
 import { Reveal, Fade } from "react-awesome-reveal";
 import styles from "../styles/About.module.scss";
 import { keyframes } from "@emotion/react";
+import me from "../assets/images/me.png";
+import Image from "next/image";
 
 const customAnimation = keyframes`
   from {
@@ -48,6 +50,7 @@ function About() {
           <span> my knowledge in technology and</span>
           <span> building scalable solutions.</span>
         </Reveal>
+        <Image src={me} alt="" />
       </div>
     </div>
   );

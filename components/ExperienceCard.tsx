@@ -1,11 +1,11 @@
 import styles from "../styles/ExperienceCard.module.scss";
 import gdsc from "../assets/images/gdsc.svg";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 type propTypes = {
   role: String;
-  context: [String, String];
+  context: String[];
   duration: String;
-  image: String;
+  image: StaticImageData;
   tools: String;
   company: String;
 };
@@ -33,7 +33,7 @@ function ExperienceCard(props: propTypes) {
             {props.context.map((elem, ind) => {
               return (
                 <div key={ind} className={styles.contextElem}>
-                  <span>-</span>
+                  <span> • </span>
                   <p>{elem}</p>
                 </div>
               );
