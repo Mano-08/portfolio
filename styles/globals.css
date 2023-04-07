@@ -29,24 +29,24 @@ a {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 9px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #141414;
+  background: #c2c2c2;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #252525;
+  background: #797979;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #3b3b3b;
+  background: #5d5d5d;
 }
 
 ::-moz-selection {
-  color: red;
-  background: yellow;
+  color: rgb(0, 0, 0);
+  background: rgb(0, 247, 255);
 }
 
 ::selection {
