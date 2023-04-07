@@ -1,18 +1,13 @@
-import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
   useEffect(() => {
-    console.log(nav);
+    const ele = document.documentElement;
     nav
-      ? document.body.classList.add("overflow-hidden", "h-screen", "w-screen")
-      : document.body.classList.remove(
-          "overflow-hidden",
-          "h-screen",
-          "w-screen"
-        );
+      ? ele.classList.add("h-[100%]", "overflow-hidden")
+      : ele.classList.remove("h-[100%]", "overflow-hidden");
   }, [nav]);
   return (
     <nav className="fixed w-screen">
@@ -20,7 +15,7 @@ function Navbar() {
         onClick={() => {
           setNav((prev) => !prev);
         }}
-        className={`relative z-20 float-right flex flex-col justify-evenly h-6 md:h-[30px] w-10 items-center mx-3 md:mx-8 my-4`}
+        className={`h-6 md:h-[30px] w-10 relative z-20 float-right flex flex-col justify-evenly items-center mx-3 md:mx-8 my-4 cursor-pointer`}
       >
         <div
           className={`h-[0.05rem] md:h-[0.1rem] w-6 ease-in-out transition duration-500 origin-right ${
