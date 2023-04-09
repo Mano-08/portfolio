@@ -1,31 +1,44 @@
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import useClickOutside from "@/pages/hooks/useClickOutside";
+import useHitEscape from "@/pages/hooks/useHitEscape";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
+  const myRef = useRef(null);
+  useClickOutside(myRef, () => {
+    setNav(false);
+  });
+  useHitEscape(nav, () => {
+    setNav((prev) => (prev ? !prev : prev));
+  });
   useEffect(() => {
     const ele = document.documentElement;
+    const wrapper = document.getElementById("container");
     nav
-      ? ele.classList.add("h-[100%]", "overflow-hidden")
-      : ele.classList.remove("h-[100%]", "overflow-hidden");
+      ? (ele.classList.add("h-[100%]", "overflow-hidden"),
+        wrapper ? wrapper.classList.add("bg-slate-300") : "")
+      : (ele.classList.remove("h-[100%]", "overflow-hidden"),
+        wrapper ? wrapper.classList.remove("bg-slate-300") : "");
   }, [nav]);
+
   return (
     <nav className="fixed w-screen">
       <div
         onClick={() => {
           setNav((prev) => !prev);
         }}
-        className={`h-6 md:h-[30px] w-10 relative z-20 float-right flex flex-col justify-evenly items-center mx-3 md:mx-8 my-4 cursor-pointer`}
+        className={`hamburger h-6 md:h-[30px] w-10 relative z-20 float-right flex flex-col justify-evenly items-center mx-3 md:mx-8 my-4 cursor-pointer`}
       >
         <div
-          className={`h-[0.05rem] md:h-[0.1rem] w-6 ease-in-out transition duration-500 origin-right ${
+          className={`hamburger h-[0.05rem] md:h-[0.1rem] w-6 ease-in-out transition duration-500 origin-right ${
             nav
               ? "bg-white rotate-[-45deg] md:translate-y-[-3.36px] translate-y-[-4.4px]"
               : "bg-black"
           }`}
         />
         <div
-          className={`h-[0.05rem] md:h-[0.1rem] w-6 ease-in-out transition duration-500 origin-right ${
+          className={`hamburger h-[0.05rem] md:h-[0.1rem] w-6 ease-in-out transition duration-500 origin-right ${
             nav
               ? "bg-white rotate-45 md:translate-y-[3.36px] translate-y-[4.4px]"
               : "bg-black"
@@ -33,8 +46,9 @@ function Navbar() {
         />
       </div>
       <div
-        className={`absolute w-[100vw] md:w-[40vw] right-[-100vw] md:right-[-40vw] gap-24 transition ease-in-out duration-[800ms] h-screen z-[15] px-[12vw] md:px-[8vw] flex flex-col justify-evenly md:justify-center bg-slate-800 text-slate-300 ${
-          nav ? "translate-x-[-100vw]  md:translate-x-[-40vw]" : "translate-x-0"
+        ref={myRef}
+        className={`absolute w-[100vw] md:w-[35vw] right-[-100vw] md:right-[-35vw] gap-24 transition ease-in-out duration-[800ms] h-screen z-[15] px-[12vw] md:px-[8vw] flex flex-col justify-evenly md:justify-center bg-slate-800 text-slate-300 ${
+          nav ? "translate-x-[-100vw]  md:translate-x-[-35vw]" : "translate-x-0"
         }`}
       >
         <div />
