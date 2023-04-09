@@ -17,6 +17,10 @@ body {
   font-family: "Manrope", sans-serif;
 }
 
+.linear-grad {
+  background: linear-gradient(to bottom, rgb(203 213 225), rgb(241 245 249));
+}
+
 a {
   color: inherit;
   text-decoration: none;

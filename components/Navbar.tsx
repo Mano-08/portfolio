@@ -17,13 +17,17 @@ function Navbar() {
     const wrapper = document.getElementById("container");
     nav
       ? (ele.classList.add("h-[100%]", "overflow-hidden"),
-        wrapper ? wrapper.classList.add("bg-slate-300") : "")
+        wrapper ? wrapper.classList.add("bg-slate-400") : "")
       : (ele.classList.remove("h-[100%]", "overflow-hidden"),
-        wrapper ? wrapper.classList.remove("bg-slate-300") : "");
+        wrapper ? wrapper.classList.remove("bg-slate-400") : "");
   }, [nav]);
+  const handleClick = () => {
+    console.log(2);
+    setNav(false);
+  };
 
   return (
-    <nav className="fixed w-screen">
+    <nav className="fixed w-screen z-[150]">
       <div
         onClick={() => {
           setNav((prev) => !prev);
@@ -47,16 +51,24 @@ function Navbar() {
       </div>
       <div
         ref={myRef}
-        className={`absolute w-[100vw] md:w-[35vw] right-[-100vw] md:right-[-35vw] gap-24 transition ease-in-out duration-[800ms] h-screen z-[15] px-[12vw] md:px-[8vw] flex flex-col justify-evenly md:justify-center bg-slate-800 text-slate-300 ${
+        className={`absolute w-[100vw] md:w-[35vw] right-[-100vw] md:right-[-35vw] gap-24 transition ease-in-out duration-[800ms] h-screen z-[15] px-[12vw] md:px-[6vw] flex flex-col justify-evenly md:justify-center bg-slate-800 text-slate-300 ${
           nav ? "translate-x-[-100vw]  md:translate-x-[-35vw]" : "translate-x-0"
         }`}
       >
         <div />
         <div className="flex flex-col text-6xl gap-3">
-          <Link href="/">Home</Link>
-          <Link href="#work">Work</Link>
-          <Link href="/about">About</Link>
-          <Link href="#contact">Contact</Link>
+          <Link href="/" onClick={handleClick}>
+            Home
+          </Link>
+          <Link href="#work" onClick={handleClick}>
+            Work
+          </Link>
+          <Link href="/about" onClick={handleClick}>
+            About
+          </Link>
+          <Link href="#contact" onClick={handleClick}>
+            Contact
+          </Link>
         </div>
         <div className="flex flex-row justify-between px-1 pt-4 border-slate-600 border-t-[0.025rem]">
           <Link href="" target="_blank">
