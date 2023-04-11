@@ -71,13 +71,13 @@ function Navbar() {
           </Link>
         </div>
         <div className="flex flex-row justify-between px-1 pt-4 border-slate-600 border-t-[0.025rem]">
-          <Link href="" target="_blank">
+          <Link href="https://twitter.com/mano__08" target="_blank">
             Twitter
           </Link>
-          <Link href="" target="_blank">
+          <Link href="https://github.com/Mano-08" target="_blank">
             GitHub
           </Link>
-          <Link href="" target="_blank">
+          <Link href="https://www.linkedin.com/in/wmano/" target="_blank">
             LinkedIn
           </Link>
           <Link href="" target="_blank">
