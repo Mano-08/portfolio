@@ -26,22 +26,17 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
-
 ::-webkit-scrollbar {
   width: 9px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #c2c2c2;
+  background: none;
 }
 
 ::-webkit-scrollbar-thumb {
   background: #797979;
+  border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {

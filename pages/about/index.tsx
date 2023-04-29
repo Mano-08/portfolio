@@ -1,5 +1,5 @@
 function Page() {
-  return <div>index</div>;
+  return <div className="min-h-screen">index</div>;
 }
 
 export default Page;

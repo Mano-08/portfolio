@@ -15,11 +15,14 @@ function Navbar() {
   useEffect(() => {
     const ele = document.documentElement;
     const wrapper = document.getElementById("container");
+    const experience = document.getElementById("experience");
     nav
       ? (ele.classList.add("h-[100%]", "overflow-hidden"),
-        wrapper ? wrapper.classList.add("bg-slate-400") : "")
+        wrapper ? wrapper.classList.add("bg-slate-400") : "",
+        experience ? experience.classList.add("bg-slate-400") : "")
       : (ele.classList.remove("h-[100%]", "overflow-hidden"),
-        wrapper ? wrapper.classList.remove("bg-slate-400") : "");
+        wrapper ? wrapper.classList.remove("bg-slate-400") : "",
+        experience ? experience.classList.remove("bg-slate-400") : "");
   }, [nav]);
   const handleClick = () => {
     console.log(2);
@@ -51,26 +54,29 @@ function Navbar() {
       </div>
       <div
         ref={myRef}
-        className={`absolute w-[100vw] md:w-[35vw] right-[-100vw] md:right-[-35vw] gap-24 transition ease-in-out duration-[800ms] h-screen z-[15] px-[12vw] md:px-[6vw] flex flex-col justify-evenly md:justify-center bg-slate-800 text-slate-300 ${
-          nav ? "translate-x-[-100vw]  md:translate-x-[-35vw]" : "translate-x-0"
+        className={`absolute w-[100vw] md:w-[30vw] right-[-100vw] md:right-[-30vw] gap-24 transition ease-in-out duration-[800ms] h-screen z-[15] px-[10vw] md:px-[4vw] flex flex-col justify-evenly md:justify-center bg-slate-800 text-slate-300 ${
+          nav ? "translate-x-[-100vw]  md:translate-x-[-30vw]" : "translate-x-0"
         }`}
       >
         <div />
-        <div className="flex flex-col text-6xl gap-3">
+        <div className="flex flex-col text-5xl gap-3">
           <Link href="/" onClick={handleClick}>
             Home
+          </Link>{" "}
+          <Link href="/about" onClick={handleClick}>
+            About
           </Link>
           <Link href="#work" onClick={handleClick}>
             Work
           </Link>
-          <Link href="/about" onClick={handleClick}>
-            About
+          <Link href="#projects" onClick={handleClick}>
+            Projects
           </Link>
           <Link href="#contact" onClick={handleClick}>
             Contact
           </Link>
         </div>
-        <div className="flex flex-row justify-between px-1 pt-4 border-slate-600 border-t-[0.025rem]">
+        <div className="flex flex-row justify-between px-3 text-sm pt-4 opacity-70 border-t-[0.01rem] border-slate-500">
           <Link href="https://twitter.com/mano__08" target="_blank">
             Twitter
           </Link>
