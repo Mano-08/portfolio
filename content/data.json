@@ -1,0 +1,27 @@
+{
+  "navlinks": [
+    { "href": "/", "title": "Home" },
+    { "href": "/about", "title": "About" },
+    { "href": "/work", "title": "Work" },
+    { "href": "/projects", "title": "Projects" },
+    { "href": "/contact", "title": "Contact" }
+  ],
+  "socials": [
+    {
+      "title": "Twitter",
+      "href": "https://twitter.com/mano__08"
+    },
+    {
+      "title": "Github",
+      "href": "https://github.com/Mano-08"
+    },
+    {
+      "title": "LinkedIn",
+      "href": "https://www.linkedin.com/in/mano-08/"
+    },
+    {
+      "title": "Devpost",
+      "href": "#"
+    }
+  ]
+}

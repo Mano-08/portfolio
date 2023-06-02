@@ -12,9 +12,17 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  user-select: none;
+  /* user-select: none; */
   scroll-behavior: smooth;
   font-family: "Manrope", sans-serif;
+}
+
+img {
+  user-select: none;
+}
+
+.hover-project:hover .project-arrow {
+  transform: rotate(0);
 }
 
 .linear-grad {
@@ -36,7 +44,6 @@ a {
 
 ::-webkit-scrollbar-thumb {
   background: #797979;
-  border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
