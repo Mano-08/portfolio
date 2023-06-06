@@ -52,7 +52,7 @@ function Navbar() {
       <div
         ref={myRef}
         className={classNames(
-          "absolute w-[100vw] md:w-[30vw] right-[-100vw] md:right-[-30vw] gap-24 transition ease-in-out duration-[800ms] h-screen z-[15] px-[10vw] md:px-[4vw] flex flex-col justify-evenly md:justify-center bg-slate-900 text-slate-300",
+          "text-slate-300 bg-slate-900 absolute w-[100vw] md:w-[30vw] right-[-100vw] md:right-[-30vw] gap-24 transition ease-in-out duration-[800ms] h-screen z-[15] px-[10vw] md:px-[4vw] flex flex-col justify-evenly md:justify-center",
           nav ? "translate-x-[-100vw]  md:translate-x-[-30vw]" : "translate-x-0"
         )}
       >
