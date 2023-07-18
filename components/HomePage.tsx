@@ -25,12 +25,17 @@ function HomePage() {
         <Animator animation={FadeUp}>
           <div
             id="home"
-            className="h-screen w-screen flex flex-col justify-center items-center"
+            className="h-screen w-screen px-5 md:px-60 flex flex-col justify-center"
           >
-            <p className="text-[6rem] md:text-[8rem]">Hello.</p>
-            <p className="w-[90vw] md:w-[25rem] text-center opacity-80">
-              My name is Mano and I seek to expand my expertise in various
-              domains of tech and product innovation.
+            <span className="text-[3rem] leading-none opacity-70 md:text-[4rem] font-medium">
+              Hello,
+            </span>
+            <span className="text-[5rem] font-medium leading-none md:text-[6rem]">
+              I&#8217;m Mano
+            </span>
+            <p className="w-[90vw] my-3 md:w-[25rem] opacity-90">
+              I am a hobbyist coder based in India. I seek to expand my
+              expertise in various domains of tech and product innovation.
             </p>
           </div>
         </Animator>

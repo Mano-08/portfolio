@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect } from "react";
 
 const useClickOutside = (myref: any, callBack: () => void) => {
@@ -16,7 +17,7 @@ const useClickOutside = (myref: any, callBack: () => void) => {
     return () => {
       document.removeEventListener("click", handleClickOutside);
     };
-  }, [myref, callBack]);
+  }, []);
 };
 
 export default useClickOutside;

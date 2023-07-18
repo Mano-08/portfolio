@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect } from "react";
 
 const useHitEscape = (nav: boolean, callBack: () => void) => {
@@ -9,6 +10,6 @@ const useHitEscape = (nav: boolean, callBack: () => void) => {
     return () => {
       window.removeEventListener("keydown", handleEscape);
     };
-  });
+  }, []);
 };
 export default useHitEscape;

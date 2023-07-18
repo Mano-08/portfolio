@@ -13,7 +13,7 @@ function Navbar() {
     setNav(false);
   });
   useHitEscape(nav, () => {
-    setNav((prev) => (prev ? !prev : prev));
+    setNav((prev) => !prev);
   });
   useEffect(() => {
     const ele = document.documentElement;
@@ -31,7 +31,7 @@ function Navbar() {
         onClick={() => {
           setNav((prev) => !prev);
         }}
-        className="hamburger h-6 md:h-[30px] w-10 relative z-20 float-right flex flex-col justify-evenly items-center mx-3 md:mx-8 my-4 cursor-pointer"
+        className="hamburger h-6 md:h-[30px] w-10 relative z-20 float-right flex flex-col justify-evenly items-center mx-5 md:mx-12 md:my-8 my-6 cursor-pointer"
       >
         <div
           className={classNames(
@@ -52,7 +52,7 @@ function Navbar() {
       <div
         ref={myRef}
         className={classNames(
-          "text-slate-300 bg-slate-900 absolute w-[100vw] md:w-[30vw] right-[-100vw] md:right-[-30vw] gap-24 transition ease-in-out duration-[800ms] h-screen z-[15] px-[10vw] md:px-[4vw] flex flex-col justify-evenly md:justify-center",
+          "text-neutral-300 bg-neutral-900 absolute w-[100vw] md:w-[30vw] right-[-100vw] md:right-[-30vw] gap-24 transition-all duration-[800ms] h-screen z-[15] px-[10vw] md:px-[4vw] flex flex-col justify-evenly md:justify-center",
           nav ? "translate-x-[-100vw]  md:translate-x-[-30vw]" : "translate-x-0"
         )}
       >
@@ -69,7 +69,7 @@ function Navbar() {
                   "transition duration-300 ease-in-out",
                   hoverElement !== "" &&
                     hoverElement !== element.title &&
-                    "text-slate-600"
+                    "text-neutral-600"
                 )}
               >
                 {element.title}
@@ -77,7 +77,7 @@ function Navbar() {
             </div>
           ))}
         </div>
-        <div className="flex flex-row justify-between px-3 text-sm pt-4 opacity-70 border-t-[0.01rem] border-slate-500">
+        <div className="flex flex-row justify-between px-3 text-sm pt-4 opacity-70 border-t-[0.01rem] border-neutral-500">
           {data.socials.map((element) => (
             <Link key={element.title} href={element.href} target="_blank">
               {element.title}
