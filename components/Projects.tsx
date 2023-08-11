@@ -8,24 +8,29 @@ import React from "react";
 
 function Projects() {
   return (
-    <div className="min-h-screen w-screen md:px-44 px-3 py-[4vh] md:py-[7vh]">
-      <span className="px-3 md:px-14 text-xs md:text-sm text-slate-500">
+    <div
+      id="projects"
+      className="relative z-[100] xl:px-64 md:px-44 px-3 min-h-screen w-screen bg-slate-50 py-[4vh] md:py-[7vh]"
+    >
+      <span className="flex p-3 md:px-14 text-xs md:text-sm text-slate-500">
         PROJECTS
       </span>
-      <div className="flex flex-col w-full relative py-4">
-        {data.projects.map((project) => {
+      <div className="flex flex-col w-full relative py-4 pb-[10vh]">
+        {data.projects.map((project, index) => {
           return (
             <div
+              // href={project.visit}
+              // target="_blank"
+              // rel="noreferrer"
               key={project.title}
-              className="flex flex-col gap-2 md:gap-0 md:flex-row justify-between py-6 px-3 md:py-14 md:px-14 border-t-[0.01rem] hover:cursor-default hover-project border-slate-700"
+              className="flex flex-col gap-2 md:gap-0 md:flex-row justify-between py-6 px-3 md:py-14 md:px-14 cursor-pointer custom-border-top hover:cursor-default hover-project"
             >
-              {/* <Image
+              <Image
                 src={idealCart}
                 alt="idealCart"
-                className="w-full md:w-1/2 h-auto"
-              /> */}
-              <div className="w-full md:w-1/2 h-[40vh] bg-violet-100" />
-              <aside className="flex flex-col justify-between w-full md:w-1/2 md:px-5">
+                className="w-full md:w-1/2 h-auto cursor-pointer"
+              />
+              <div className="flex flex-col justify-between w-full md:w-1/2 md:px-5 cursor-pointer">
                 <div className="flex flex-col">
                   <p className="text-3xl">idealCart</p>
                   <ul className="py-2 list-outside text-zinc-800">
@@ -34,7 +39,7 @@ function Projects() {
                     ))}
                   </ul>
                 </div>
-                <div className="flex flex-row justify-between">
+                <div className="flex flex-row justify-between items-end">
                   <span>{project.date}</span>
                   <span className="flex flex-row gap-2">
                     <Link
@@ -49,22 +54,17 @@ function Projects() {
                         className="h-9 w-9"
                       />
                     </Link>
-                    <Link
-                      href={project.visit}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="flex justify-center items-center"
-                    >
+                    <div className="flex justify-center items-center">
                       <Image
                         priority
                         src={arrow}
                         alt="visit"
                         className="h-5 w-5 rotate-0 project-arrow transition duration-500"
                       />
-                    </Link>
+                    </div>
                   </span>
                 </div>
-              </aside>
+              </div>
             </div>
           );
         })}

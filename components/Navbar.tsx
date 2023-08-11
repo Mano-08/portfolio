@@ -13,7 +13,7 @@ function Navbar() {
     setNav(false);
   });
   useHitEscape(nav, () => {
-    setNav((prev) => !prev);
+    setNav((prev) => false);
   });
   useEffect(() => {
     const ele = document.documentElement;
@@ -21,6 +21,7 @@ function Navbar() {
       ? ele.classList.add("h-[100%]", "overflow-hidden")
       : ele.classList.remove("h-[100%]", "overflow-hidden");
   }, [nav]);
+
   const handleClick = () => {
     setNav(false);
   };
@@ -61,6 +62,7 @@ function Navbar() {
           {data.navlinks.map((element) => (
             <div key={element.title}>
               <Link
+                scroll={false}
                 onClick={handleClick}
                 href={element.href}
                 onMouseEnter={() => setHoverElement(element.title)}
@@ -77,7 +79,7 @@ function Navbar() {
             </div>
           ))}
         </div>
-        <div className="flex flex-row justify-between px-3 text-sm pt-4 opacity-70 border-t-[0.01rem] border-neutral-500">
+        <div className="flex flex-row justify-between px-3 text-sm pt-4 opacity-70 custom-border-top">
           {data.socials.map((element) => (
             <Link key={element.title} href={element.href} target="_blank">
               {element.title}

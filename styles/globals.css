@@ -6,15 +6,23 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  border: 0;
 }
 
 html,
 body {
   width: 100vw;
   overflow-x: hidden;
-  /* user-select: none; */
+  box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: "Sora", sans-serif;
+}
+
+.custom-border-bottom {
+  border-bottom: 0.2px solid rgb(51, 65, 85);
+}
+.custom-border-top {
+  border-top: 0.2px solid rgb(51, 65, 85);
 }
 
 img {
@@ -27,6 +35,11 @@ img {
 
 .linear-grad {
   background: linear-gradient(to bottom, rgb(203 213 225), rgb(241 245 249));
+}
+
+.custom-border-x {
+  border-left: 2px #5d5d5d solid;
+  border-right: 2px #5d5d5d solid;
 }
 
 a {
@@ -58,7 +71,7 @@ a {
 
 ::selection {
   color: rgb(0, 0, 0);
-  background: rgb(246, 232, 255);
+  background: rgb(200, 255, 250);
 }
 
 .bg-dark {
