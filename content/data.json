@@ -2,9 +2,9 @@
   "navlinks": [
     { "href": "/", "title": "Home" },
     { "href": "/about", "title": "About" },
-    { "href": "/work", "title": "Work" },
-    { "href": "/projects", "title": "Projects" },
-    { "href": "/contact", "title": "Contact" }
+    { "href": "/#work", "title": "Work" },
+    { "href": "/#projects", "title": "Projects" },
+    { "href": "/#contact", "title": "Contact" }
   ],
   "socials": [
     {
@@ -20,8 +20,8 @@
       "href": "https://www.linkedin.com/in/mano-08/"
     },
     {
-      "title": "Devpost",
-      "href": "#"
+      "title": "Email",
+      "href": "mailto:mano.26q@gmail.com"
     }
   ]
 }

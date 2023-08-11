@@ -17,7 +17,7 @@ const customAnimation = keyframes`
 function Experience() {
   return (
     <div
-      id="experience"
+      id="work"
       className="relative z-[100] xl:px-64 md:px-44 px-3 min-h-screen w-screen bg-slate-50 py-[5.5vh] md:py-[8.5vh] duration-500 ease-in-out"
     >
       <span className="flex p-3 md:px-14 text-xs md:text-sm text-slate-500 custom-border-bottom">

@@ -19,9 +19,6 @@ function Projects() {
         {data.projects.map((project, index) => {
           return (
             <div
-              // href={project.visit}
-              // target="_blank"
-              // rel="noreferrer"
               key={project.title}
               className="flex flex-col gap-2 md:gap-0 md:flex-row justify-between py-6 px-3 md:py-14 md:px-14 cursor-pointer custom-border-top hover:cursor-default hover-project"
             >
@@ -54,14 +51,19 @@ function Projects() {
                         className="h-9 w-9"
                       />
                     </Link>
-                    <div className="flex justify-center items-center">
+                    <Link
+                      href={project.visit}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex justify-center items-center"
+                    >
                       <Image
                         priority
                         src={arrow}
                         alt="visit"
                         className="h-5 w-5 rotate-0 project-arrow transition duration-500"
                       />
-                    </div>
+                    </Link>
                   </span>
                 </div>
               </div>
