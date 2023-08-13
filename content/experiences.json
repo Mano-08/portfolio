@@ -10,10 +10,16 @@
           "desc": "Designed and built blog summarizer, by reverse engineering ChatGPT API calls to send and receive AI responses, saving up to 5 hours per week of users."
         },
         {
-          "desc": "Integrated LLMs into a highly customisable platform, by using ReactFlow where the users can drag and drop AI Providers and File importers to chat with the model based on the data extracted."
+          "desc": "Integrated LLMs into a highly customisable application, where the users can drag and drop AI Providers and File importers to chat with the model based on the data extracted."
         },
         {
-          "technology": ["TypeScript", "Tailwind CSS", "Next.js", "Python"]
+          "technology": [
+            "TypeScript",
+            "Tailwind CSS",
+            "Next.js",
+            "Python",
+            "ReactJS"
+          ]
         }
       ]
     },
