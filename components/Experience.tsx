@@ -1,18 +1,6 @@
 import Reveal, { Fade } from "react-awesome-reveal";
-import { keyframes } from "@emotion/react";
 import experiences from "../content/experiences.json";
-
-const customAnimation = keyframes`
-  from {
-    opacity: 0;
-    transform: translate3d(0, 10px, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
-`;
+import { customAnimation } from "@/utils/animation";
 
 function Experience() {
   return (

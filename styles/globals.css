@@ -37,6 +37,41 @@ img {
   background: linear-gradient(to bottom, rgb(203 213 225), rgb(241 245 249));
 }
 
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal-custom:nth-child(1) {
+  animation: reveal 1s 0s forwards;
+}
+.reveal-custom:nth-child(2) {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: reveal 1s 100ms forwards;
+}
+.reveal-custom-info:nth-child(1) {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: reveal 1s 400ms forwards;
+}
+.reveal-custom-info:nth-child(2) {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: reveal 1s 600ms forwards;
+}
+.reveal-custom-info:nth-child(3) {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: reveal 1s 800ms forwards;
+}
+
 .custom-border-x {
   border-left: 2px #5d5d5d solid;
   border-right: 2px #5d5d5d solid;

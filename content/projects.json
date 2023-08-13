@@ -1,31 +1,34 @@
 {
   "projects": [
     {
-      "title": "idealCart",
+      "title": "IdealCart",
       "context": [
-        "Embark on a shopping adventure across a multitude of websites yet effortlessly manage them all in your idealCart"
+        "Shop across a multitude of websites and",
+        " save your products in one place."
       ],
       "date": "July, 2022",
-      "github": "www.github.com",
-      "visit": "https://www.amazon.com"
+      "github": "https://github.com/Mano-08/idealCart.2.0",
+      "visit": "https://chrome.google.com/webstore/detail/idealcart-your-shopping-p/ofbkfkeekmaiigkhoinhlknpniijddba?hl=en-US"
     },
     {
-      "title": "idealCart",
+      "title": "buyNsell",
       "context": [
-        "Embark on a shopping adventure across a multitude of websites yet effortlessly manage them all in your idealCart"
+        "A platform for our university students to",
+        " explore, buy and sell used products."
       ],
-      "date": "July, 2022",
-      "github": "www.github.com",
-      "visit": "https://www.amazon.com"
+      "date": "April, 2023",
+      "github": "https://github.com/Mano-08/buyNsell",
+      "visit": "https://github.com/Mano-08/buyNsell"
     },
     {
-      "title": "idealCart",
+      "title": "Recipe Search App",
       "context": [
-        "Embark on a shopping adventure across a multitude of websites yet effortlessly manage them all in your idealCart"
+        "Search for recipes and ingredients from",
+        " tens of thousands of meals."
       ],
-      "date": "July, 2022",
-      "github": "www.github.com",
-      "visit": "https://www.amazon.com"
+      "date": "April, 2023",
+      "github": "https://my-favourite-recipes.netlify.app/",
+      "visit": "https://my-favourite-recipes.netlify.app/"
     }
   ]
 }

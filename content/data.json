@@ -1,7 +1,6 @@
 {
   "navlinks": [
-    { "href": "/", "title": "Home" },
-    { "href": "/about", "title": "About" },
+    { "href": "/#home", "title": "Home" },
     { "href": "/#work", "title": "Work" },
     { "href": "/#projects", "title": "Projects" },
     { "href": "/#contact", "title": "Contact" }

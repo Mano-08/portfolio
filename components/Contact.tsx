@@ -6,10 +6,12 @@ function Contact() {
   return (
     <footer
       id="contact"
-      className="w-screen gap-10 md:gap-16 bg-[#f5f4f1] xl:px-64 md:px-44 px-3 py-7 flex flex-col justify-between items-center md:items-start"
+      className="w-screen bg-[#f5f4f1] xl:px-64 md:px-44 px-3 py-7 flex flex-col justify-between items-center md:items-start"
     >
-      <div className="text-6xl text-neutral-400 font-thin">Get in touch</div>
-      <div className="w-full px-2 md:px-0 flex flex-row items-center text-base md:text-[2rem] justify-between">
+      <div className="text-4xl text-neutral-400 font-thin pb-4 md:pb-7">
+        Get in touch
+      </div>
+      <div className="w-full px-2 md:px-0 flex flex-row items-center text-base md:text-[2rem] justify-between pb-12 md:pb-16">
         <Link
           href="mailto:mano.26q@gmail.com"
           className="py-1 pr-2 hover:underline"
