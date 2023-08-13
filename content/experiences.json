@@ -1,0 +1,39 @@
+{
+  "experiences": [
+    {
+      "company": "TaskLabs",
+      "location": "Mumbai, India (Remote)",
+      "duration": "March 2023 - Present",
+      "role": "Software Developer",
+      "description": [
+        {
+          "desc": "Accelerated the file format conversion rate by 70%, by integrating WASM tools, cutting down the cloud charges to $0."
+        },
+        {
+          "desc": "Designed and built blog summarizer, by reverse engineering ChatGPT API calls to send and receive AI responses, saving up to 5 hours per week of users."
+        },
+        {
+          "technology": [
+            "WebAssembly",
+            "TypeScript",
+            "Tailwind CSS",
+            "Next.js",
+            "Python"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Google Developer Student Club",
+      "location": "West Godavari, India",
+      "duration": "October 2022 - March 2023",
+      "role": "Full Stack Web Developer",
+      "description": [
+        {
+          "desc": " Designed and built the official website of the club within a tight timeframe of 4 days, by leading a group of 4 developers and 2 designers."
+        },
+        { "technology": ["SCSS", "Next.js", "ReactJS"] }
+      ]
+    }
+  ]
+}

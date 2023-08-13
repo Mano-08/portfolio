@@ -1,0 +1,37 @@
+{
+  "projects": [
+    {
+      "title": "IdealCart",
+      "key": "idealcart",
+      "context": [
+        "Shop across a multitude of websites and",
+        " save your products in one place."
+      ],
+      "date": "July, 2022",
+      "github": "https://github.com/Mano-08/idealCart.2.0",
+      "visit": "https://chrome.google.com/webstore/detail/idealcart-your-shopping-p/ofbkfkeekmaiigkhoinhlknpniijddba?hl=en-US"
+    },
+    {
+      "title": "buyNsell",
+      "key": "buynsell",
+      "context": [
+        "A platform for our university students to",
+        " explore, buy and sell used products."
+      ],
+      "date": "April, 2023",
+      "github": "https://github.com/Mano-08/buyNsell",
+      "visit": "https://github.com/Mano-08/buyNsell"
+    },
+    {
+      "title": "Recipe Search App",
+      "key": "recipeapp",
+      "context": [
+        "Search for recipes and ingredients from",
+        " tens of thousands of meals."
+      ],
+      "date": "January, 2023",
+      "github": "https://my-favourite-recipes.netlify.app/",
+      "visit": "https://my-favourite-recipes.netlify.app/"
+    }
+  ]
+}

@@ -6,15 +6,75 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  border: 0;
 }
 
 html,
 body {
-  max-width: 100vw;
+  width: 100vw;
   overflow-x: hidden;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Sora", sans-serif;
+}
+
+.custom-border-bottom {
+  border-bottom: 0.2px solid rgb(51, 65, 85);
+}
+.custom-border-top {
+  border-top: 0.2px solid rgb(51, 65, 85);
+}
+
+img {
   user-select: none;
-  font-family: "Manrope", sans-serif;
-  /* font-family: "Raleway", sans-serif; */
+}
+
+.hover-project:hover .project-arrow {
+  transform: rotate(45deg);
+}
+
+.linear-grad {
+  background: linear-gradient(to bottom, rgb(203 213 225), rgb(241 245 249));
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal-custom:nth-child(1) {
+  animation: reveal 1s 0s forwards;
+}
+.reveal-custom:nth-child(2) {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: reveal 1s 100ms forwards;
+}
+.reveal-custom-info:nth-child(1) {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: reveal 1s 400ms forwards;
+}
+.reveal-custom-info:nth-child(2) {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: reveal 1s 600ms forwards;
+}
+.reveal-custom-info:nth-child(3) {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: reveal 1s 800ms forwards;
+}
+
+.custom-border-x {
+  border-left: 2px #5d5d5d solid;
+  border-right: 2px #5d5d5d solid;
 }
 
 a {
@@ -22,18 +82,17 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.custom-border {
+  border: 2px #eeeeee solid;
 }
 
 ::-webkit-scrollbar {
   width: 9px;
+  background: transparent;
 }
 
 ::-webkit-scrollbar-track {
-  background: #c2c2c2;
+  background: none;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -46,10 +105,19 @@ a {
 
 ::-moz-selection {
   color: rgb(0, 0, 0);
-  background: rgb(0, 247, 255);
+  background: rgb(214, 254, 255);
 }
 
 ::selection {
   color: rgb(0, 0, 0);
-  background: rgb(0, 247, 255);
+  background: rgb(218, 217, 212);
+}
+
+.bg-dark {
+  background: linear-gradient(
+    23deg,
+    rgb(39, 0, 39),
+    rgb(0, 0, 46),
+    rgb(44, 0, 44)
+  );
 }
