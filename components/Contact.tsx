@@ -38,7 +38,7 @@ function Contact() {
         </Link>
       </div>
       <Link
-        href="https://github.com/Mano-08/portfolio/blob/main/LICENSE"
+        href="https://github.com/Mano-08/portfolio"
         rel="noreferrer"
         target="_blank"
         className="custom-border-top flex flex-row justify-between items-end px-1 py-2 text-sm w-full text-zinc-500"
