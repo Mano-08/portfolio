@@ -47,7 +47,7 @@ function Experience() {
                 damping={0.1}
                 delay={50}
               >
-                <div className="text-xl font-semibold text-zinc-700">
+                <div className="text-[1.1rem] sm:text-xl font-semibold text-zinc-700">
                   {experience.company}
                 </div>
               </Reveal>
@@ -59,7 +59,7 @@ function Experience() {
                 damping={0.1}
                 delay={100}
               >
-                <ul className="px-0.5 md:px-12 md:pr-48 my-2">
+                <ul className="px-0.5 text-[0.9rem] sm:text-base md:px-12 md:pr-48 my-2">
                   {experience.description.map((content, index) => {
                     return (
                       <li
