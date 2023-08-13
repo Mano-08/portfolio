@@ -29,10 +29,6 @@ img {
   user-select: none;
 }
 
-.hover-project:hover .project-arrow {
-  transform: rotate(45deg);
-}
-
 .linear-grad {
   background: linear-gradient(to bottom, rgb(203 213 225), rgb(241 245 249));
 }

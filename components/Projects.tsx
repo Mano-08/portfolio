@@ -26,7 +26,7 @@ function Projects() {
               target="_blank"
               rel="noreferrer"
               key={project.key}
-              className="flex flex-col gap-4 sm:gap-2 md:gap-0 md:flex-row justify-between py-10 px-3 md:py-14 md:px-14 cursor-pointer custom-border-top hover:cursor-default hover-project"
+              className="flex flex-col gap-4 sm:gap-2 md:gap-0 md:flex-row justify-between py-10 px-3 md:py-14 md:px-14 cursor-pointer custom-border-top hover:cursor-default"
             >
               <Image
                 src={images[project.key]}
@@ -71,7 +71,7 @@ function Projects() {
                         priority
                         src={arrow}
                         alt="visit"
-                        className="h-5 w-5 rotate-0 project-arrow transition duration-500"
+                        className="h-5 w-5 rotate-0 transition duration-500"
                       />
                     </div>
                   </div>

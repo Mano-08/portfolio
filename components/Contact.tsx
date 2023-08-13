@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import React, { useState } from "react";
+import React from "react";
+import arrow from "../public/images/arrow.svg";
 
 function Contact() {
   return (
@@ -43,7 +44,11 @@ function Contact() {
         target="_blank"
         className="custom-border-top flex flex-row justify-between items-end px-1 py-2 text-sm w-full text-zinc-500"
       >
-        <span>&#169; Mano 2023</span> <span>visit &#8599;</span>
+        <span>&#169; Mano 2023</span>
+        <span className="flex flex-row items-center gap-1.5">
+          <span>visit</span>{" "}
+          <Image src={arrow} alt="arrow" className="h-2.5 w-2.5" />
+        </span>
       </Link>
     </footer>
   );
