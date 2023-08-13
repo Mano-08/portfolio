@@ -7,6 +7,7 @@ import Link from "next/link";
 import React from "react";
 import Reveal from "react-awesome-reveal";
 import { customAnimation } from "@/utils/animation";
+import { images } from "@/utils/images";
 
 function Projects() {
   return (
@@ -24,17 +25,22 @@ function Projects() {
               href={project.visit}
               target="_blank"
               rel="noreferrer"
-              key={project.title}
+              key={project.key}
               className="flex flex-col gap-2 md:gap-0 md:flex-row justify-between py-6 px-3 md:py-14 md:px-14 cursor-pointer custom-border-top hover:cursor-default hover-project"
             >
               <Image
-                src={idealCart}
-                alt="idealCart"
-                className="w-full md:w-1/2 h-auto cursor-pointer"
+                src={images[project.key]}
+                alt={project.title}
+                className="w-full md:w-1/2 h-auto cursor-pointer custom-border"
               />
               <div className="flex flex-col justify-between w-full md:w-1/2 md:px-5 cursor-pointer">
                 <div className="flex flex-col">
-                  <Reveal triggerOnce keyframes={customAnimation} cascade>
+                  <Reveal
+                    triggerOnce
+                    keyframes={customAnimation}
+                    cascade
+                    damping={0.1}
+                  >
                     <p className="text-3xl">{project.title}</p>
                     <ul className="py-2 list-outside text-zinc-800">
                       {project.context.map((contextElement, index) => (

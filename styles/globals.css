@@ -82,6 +82,10 @@ a {
   text-decoration: none;
 }
 
+.custom-border {
+  border: 2px #eeeeee solid;
+}
+
 ::-webkit-scrollbar {
   width: 9px;
   background: transparent;

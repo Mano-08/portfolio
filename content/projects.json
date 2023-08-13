@@ -2,6 +2,7 @@
   "projects": [
     {
       "title": "IdealCart",
+      "key": "idealcart",
       "context": [
         "Shop across a multitude of websites and",
         " save your products in one place."
@@ -12,6 +13,7 @@
     },
     {
       "title": "buyNsell",
+      "key": "buynsell",
       "context": [
         "A platform for our university students to",
         " explore, buy and sell used products."
@@ -22,6 +24,7 @@
     },
     {
       "title": "Recipe Search App",
+      "key": "recipeapp",
       "context": [
         "Search for recipes and ingredients from",
         " tens of thousands of meals."
