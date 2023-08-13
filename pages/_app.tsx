@@ -19,7 +19,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="author" content="Mano W" />
         <meta
           name="description"
-          content="Portfolio of Mano. A hobbyist coder from India."
+          content="Mano is a Software Developer from India. He is a hobbyist coder and loves to build cool web apps."
         />
         <meta
           property="og:title"
@@ -28,7 +28,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta property="og:type" content="website" />
         <meta
           property="og:description"
-          content="Portfolio of Mano. A hobbyist coder from India."
+          content="Mano is a Software Developer from India. He is a hobbyist coder and loves to build cool web apps."
         />
         <meta property="og:url" content="https://mano-codes.vercel.app/" />
         <meta
@@ -43,7 +43,10 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="twitter:site" content="@mano__08" />
         <meta name="twitter:creator" content="@mano__08" />
         <meta name="twitter:url" content="https://mano-codes.vercel.app/" />
-        <meta name="twitter:title" content="Portfolio of Mano" />
+        <meta
+          name="twitter:title"
+          content="Mano - Creative Design and Development"
+        />
         <meta
           name="twitter:description"
           content="Mano is a Software Developer from India. He is a hobbyist coder and loves to build cool web apps."
