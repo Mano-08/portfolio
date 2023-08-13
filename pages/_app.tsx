@@ -30,7 +30,7 @@ export default function App({ Component, pageProps }: AppProps) {
           property="og:description"
           content="Portfolio of Mano. A hobbyist coder from India."
         />
-        {/* <meta property="og:url" content="" /> */}
+        <meta property="og:url" content="https://mano-codes.vercel.app/" />
         <meta
           property="og:image"
           content="https://raw.githubusercontent.com/Mano-08/Mano-08/orange-theme/id.png"
@@ -42,7 +42,7 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         <meta name="twitter:site" content="@mano__08" />
         <meta name="twitter:creator" content="@mano__08" />
-        {/* <meta name="twitter:url" content="" /> */}
+        <meta name="twitter:url" content="https://mano-codes.vercel.app/" />
         <meta name="twitter:title" content="Portfolio of Mano" />
         <meta
           name="twitter:description"

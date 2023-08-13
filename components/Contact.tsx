@@ -11,7 +11,7 @@ function Contact() {
       <div className="text-4xl text-neutral-400 font-thin pb-4 md:pb-7">
         Get in touch
       </div>
-      <div className="w-full px-2 md:px-0 flex flex-row items-center text-base md:text-[2rem] justify-between pb-12 md:pb-16">
+      <div className="w-full flex flex-row items-center text-[0.945rem] md:text-[2rem] justify-between pb-12 md:pb-16">
         <Link
           href="mailto:mano.26q@gmail.com"
           className="py-1 pr-2 hover:underline"

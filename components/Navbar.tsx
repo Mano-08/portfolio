@@ -6,8 +6,9 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 
 function Navbar() {
-  const [nav, setNav] = useState(false);
-  const [hoverElement, setHoverElement] = useState("");
+  const [nav, setNav] = useState<boolean>(false);
+  const [hoverElement, setHoverElement] = useState<string>("");
+  const [xCoordinate, setXCoordinate] = useState<number>(0);
   const myRef = useRef(null);
   useClickOutside(myRef, () => {
     setNav(false);
@@ -24,6 +25,15 @@ function Navbar() {
 
   const handleClick = () => {
     setNav(false);
+  };
+
+  const handleTouchStart = (e: any) => {
+    setXCoordinate(e.touches[0].clientX);
+  };
+  const handleTouchEnd = (e: any) => {
+    if (e.changedTouches[0].clientX - xCoordinate > 0) {
+      setNav(false);
+    }
   };
 
   return (
@@ -51,6 +61,8 @@ function Navbar() {
         />
       </div>
       <div
+        onTouchStart={handleTouchStart}
+        onTouchEnd={handleTouchEnd}
         ref={myRef}
         className={classNames(
           "text-neutral-300 bg-neutral-900 absolute w-[100vw] md:w-[30vw] right-[-100vw] md:right-[-30vw] gap-24 transition-all duration-[800ms] h-screen z-[15] px-[10vw] md:px-[4vw] flex flex-col justify-evenly md:justify-center",

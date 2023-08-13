@@ -26,7 +26,7 @@ function Projects() {
               target="_blank"
               rel="noreferrer"
               key={project.key}
-              className="flex flex-col gap-2 md:gap-0 md:flex-row justify-between py-6 px-3 md:py-14 md:px-14 cursor-pointer custom-border-top hover:cursor-default hover-project"
+              className="flex flex-col gap-4 sm:gap-2 md:gap-0 md:flex-row justify-between py-10 px-3 md:py-14 md:px-14 cursor-pointer custom-border-top hover:cursor-default hover-project"
             >
               <Image
                 src={images[project.key]}
@@ -41,17 +41,19 @@ function Projects() {
                     cascade
                     damping={0.1}
                   >
-                    <p className="text-3xl">{project.title}</p>
-                    <ul className="py-2 list-outside text-zinc-800">
+                    <p className="text-[1.4rem] font-semibold sm:font-normal sm:text-3xl">
+                      {project.title}
+                    </p>
+                    <ul className="py-2 list-outside text-zinc-800 sm:text-base text-[0.9rem]">
                       {project.context.map((contextElement, index) => (
                         <li key={index}>{contextElement}</li>
                       ))}
                     </ul>
                   </Reveal>
                 </div>
-                <div className="flex flex-row justify-between items-end">
-                  <span>{project.date}</span>
-                  <span className="flex flex-row gap-2">
+                <div className="flex flex-row justify-between pt-2 items-end text-[0.95rem] sm:text-base ">
+                  <div>{project.date}</div>
+                  <div className="flex flex-row gap-2">
                     {/* <Link
                       href={project.github}
                       target="_blank"
@@ -64,7 +66,7 @@ function Projects() {
                         className="h-9 w-9"
                       />
                     </Link> */}
-                    <div className="flex justify-center items-center">
+                    <div className="flex justify-center items-end">
                       <Image
                         priority
                         src={arrow}
@@ -72,7 +74,7 @@ function Projects() {
                         className="h-5 w-5 rotate-0 project-arrow transition duration-500"
                       />
                     </div>
-                  </span>
+                  </div>
                 </div>
               </div>
             </Link>

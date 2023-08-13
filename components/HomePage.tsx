@@ -11,13 +11,13 @@ function HomePage() {
     >
       <div className="flex gap-20 lg:flex-row flex-col-reverse items-center">
         <div className=" flex flex-col justify-center">
-          <span className="reveal-custom text-[3rem] leading-none text-zinc-500 md:text-[4rem] font-medium">
+          <span className="reveal-custom text-[2.85rem] sm:text-[3rem] leading-none text-zinc-500 md:text-[4rem] font-medium">
             Hello,
           </span>
-          <span className="reveal-custom text-[5rem] font-medium leading-none md:text-[6rem]">
+          <span className="reveal-custom text-[4.1rem] sm:text-[4.5rem] font-medium leading-none md:text-[6rem]">
             I&#8217;m Mano
           </span>
-          <div className="w-[90vw] my-3 md:w-[25rem] opacity-90">
+          <div className="w-[90vw] my-3 md:w-[25rem] opacity-90 text-[0.88rem] sm:text-base">
             <div className="reveal-custom-info">
               I am a hobbyist coder based in India. I seek to
             </div>{" "}
