@@ -92,6 +92,17 @@ function Experience() {
                   })}
                 </ul>
               </Reveal>
+              <Reveal
+                triggerOnce
+                keyframes={customAnimation}
+                cascade
+                damping={0.1}
+                delay={100}
+              >
+                <div className="text-sm my-2.5 block md:hidden">
+                  {experience.duration}
+                </div>
+              </Reveal>
             </section>
           );
         })}
