@@ -23,10 +23,10 @@ function Contact() {
         <Link
           rel="noreferrer"
           target="_blank"
-          href="https://twitter.com/mano__08"
+          href="https://github.com/Mano-08"
           className="py-1 px-2 hover:underline"
         >
-          twitter
+          github
         </Link>
         &#8226;
         <Link
