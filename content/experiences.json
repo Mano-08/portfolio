@@ -2,22 +2,26 @@
   "experiences": [
     {
       "company": "TaskLabs",
-      "location": "Bengaluru, India (Remote)",
-      "duration": "March 2023 - Present",
+      "location": "Bengaluru, India",
+      "duration": "May 2023 - July 2023",
       "role": "Software Developer",
       "description": [
         {
-          "desc": "Designed and built blog summarizer, by reverse engineering ChatGPT API calls to send and receive AI responses, saving up to 5 hours per week of users."
+          "desc": "Scaled up the file-format-conversion rate by 22%, using advanced compression algorithm modules."
         },
         {
-          "desc": "Integrated LLMs into a highly customisable application, where the users can drag and drop AI Providers and File importers to chat with the model based on the data extracted."
+          "desc": "Designed and implemented blog summarizers, helping users save up to 5 hours per week."
+        },
+        {
+          "desc": "Built user authentication and data-fetching practices with AWS Cognito and S3 buckets."
         },
         {
           "technology": [
+            "AWS",
             "TypeScript",
-            "Tailwind CSS",
             "Next.js",
             "Python",
+            "Tailwind CSS",
             "ReactJS"
           ]
         }
@@ -30,7 +34,10 @@
       "role": "Full Stack Web Developer",
       "description": [
         {
-          "desc": " Designed and built the official website of the club within a tight timeframe of 4 days, by leading a group of 4 developers and 2 designers."
+          "desc": "Led a team of 4 developers to build the official website of the club within a tight time frame of 4 days, by effectively collaborating with the cross-functional teams."
+        },
+        {
+          "desc": "Conducted workshops on the basics of web development for a crowd of over 150 people, explaining the concepts of JavaScript and ReactJS."
         },
         { "technology": ["SCSS", "Next.js", "ReactJS"] }
       ]
