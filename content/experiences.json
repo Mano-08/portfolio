@@ -7,10 +7,10 @@
       "role": "Software Developer",
       "description": [
         {
-          "desc": "Scaled up the file-format-conversion rate by 22%, using advanced compression algorithm modules."
+          "desc": "• Designed and implemented blog summarizers, helping users save up to 5 hours per week."
         },
         {
-          "desc": "Designed and implemented blog summarizers, helping users save up to 5 hours per week."
+          "desc": "Developed the tutorial interface using Next.js, offering 98% performance scale on Lighthouse."
         },
         {
           "desc": "Built user authentication and data-fetching practices with AWS Cognito and S3 buckets."
