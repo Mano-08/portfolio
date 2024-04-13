@@ -1,6 +1,17 @@
 {
   "projects": [
     {
+      "title": "BattleShip",
+      "key": "battleship",
+      "context": [
+        "A 2-Player game where opponents fight to",
+        " destroy all ships to achieve victory."
+      ],
+      "date": "March, 2024",
+      "github": "https://github.com/Mano-08/games",
+      "visit": "https://github.com/Mano-08/games"
+    },
+    {
       "title": "buyNsell",
       "key": "buynsell",
       "context": [
@@ -12,16 +23,6 @@
       "visit": "https://github.com/Mano-08/buyNsell"
     },
     {
-      "title": "Recipe Search App",
-      "key": "recipeapp",
-      "context": [
-        "Search for recipes and ingredients from",
-        " tens of thousands of meals."
-      ],
-      "date": "January, 2023",
-      "github": "https://github.com/Mano-08/recipe-app",
-      "visit": "https://my-favourite-recipes.netlify.app/"
-    },{
       "title": "IdealCart",
       "key": "idealcart",
       "context": [

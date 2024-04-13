@@ -7,7 +7,7 @@
       "role": "Software Developer",
       "description": [
         {
-          "desc": "• Designed and implemented blog summarizers, helping users save up to 5 hours per week."
+          "desc": "Designed and integrated blog summarizers, helping users save up to 5 hours per week."
         },
         {
           "desc": "Developed the tutorial interface using Next.js, offering 98% performance scale on Lighthouse."
@@ -31,7 +31,7 @@
       "company": "Google Developer Student Club",
       "location": "West Godavari, India",
       "duration": "October 2022 - March 2023",
-      "role": "Full Stack Web Developer",
+      "role": "Technical Team Member",
       "description": [
         {
           "desc": "Led a team of 4 developers to build the official website of the club within a tight time frame of 4 days, by effectively collaborating with the cross-functional teams."
