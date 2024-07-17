@@ -7,17 +7,18 @@
       "role": "Software Developer",
       "description": [
         {
-          "desc": "Designed and integrated blog summarizers, helping users save up to 5 hours per week."
+          "desc": "Achieved a 28% faster file-format conversion rate by integrating WebAssembly in the browser, thus eliminating the need for a web server and ensuring 100% data privacy."
         },
         {
-          "desc": "Developed the tutorial interface using Next.js, offering 98% performance scale on Lighthouse."
+          "desc": "Designed and developed a Chrome extension that integrates with AI models to summarise web content."
         },
         {
-          "desc": "Built user authentication and data-fetching practices with AWS Cognito and S3 buckets."
+          "desc": "Built the tutorial interface of AI summariser using Next.js, offering a 98% performance scale on Lighthouse."
         },
         {
           "technology": [
-            "AWS",
+            "AWS S3",
+            "AWS Cognito",
             "TypeScript",
             "Next.js",
             "Python",
