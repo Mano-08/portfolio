@@ -15,7 +15,7 @@ function Landing() {
       <div className="flex flex-col text-center md:text-left">
         <h1 className="font-medium text-base md:text-xl">Hi! I&apos;m Mano</h1>
         <p className="text-sm text-black/50 md:w-auto w-[70vw]">
-          I am a software developer who loves building stuff on the web
+          A software developer who loves building stuff on the web
         </p>
         <Socials className="flex flex-row items-center md:mx-0 mx-auto" />
       </div>
