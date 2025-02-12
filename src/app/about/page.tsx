@@ -18,7 +18,7 @@ function Page() {
         <br />I tend to pause and admire beautifully designed architectures,
         rich in fine details. I absolutely love when products{" "}
         <span className="text-black">
-          aren't just functional but also well designed ✨
+          aren&apos;t just functional but also well designed ✨
         </span>{" "}
         — clean, satisfying aesthetics always win me over!
       </p>
