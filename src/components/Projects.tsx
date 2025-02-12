@@ -38,7 +38,7 @@ const projects = [
   },
   {
     title: "Ideal Cart",
-    desc: "Chrome extension to shop across a multitude of websites",
+    desc: "Chrome extension to save products across a multitude of websites",
     github: "https://github.com/Mano-08/idealCart",
     img: { src: "/projects/idealcart.png", alt: "ideal cart" },
     live: "https://chromewebstore.google.com/detail/idealcart-your-shopping-p/ofbkfkeekmaiigkhoinhlknpniijddba",
@@ -55,7 +55,9 @@ function Projects() {
           {projects.map((project, index) => (
             <div
               key={project.title}
-              className="flex flex-col gap-2 p-2.5 hover:p-3 transition-all duration-500 hover:border rounded-md border-solid hover:border-neutral-700"
+              className="flex flex-col gap-2 p-2.5 hover:p-3 hover:border-black/50 transition-all duration-500 border rounded-md border-solid border-neutral-300"
+
+              // className="flex flex-col gap-2 p-2.5 hover:p-3 transition-all duration-500 hover:border rounded-md border-solid hover:border-neutral-700"
             >
               <Image
                 src={project.img.src}
@@ -100,7 +102,9 @@ function Projects() {
           {FreelanceProjects.map((project, index) => (
             <div
               key={project.title}
-              className="flex flex-col gap-2 p-2.5 hover:p-3 transition-all duration-500 hover:border rounded-md border-solid hover:border-neutral-700"
+              className="flex flex-col gap-2 p-2.5 hover:p-3 hover:border-black/50 transition-all duration-500 border rounded-md border-solid border-neutral-300"
+
+              // className="flex flex-col gap-2 p-2.5 hover:p-3 transition-all duration-500 hover:border rounded-md border-solid hover:border-neutral-700"
             >
               <Image
                 src={project.img.src}

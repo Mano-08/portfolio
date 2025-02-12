@@ -14,7 +14,7 @@ const experiences = [
   {
     title: "TaskLabs Inc. | SDE Intern",
     duration: "May 2023 - Jul 2023",
-    desc: "Full stack engineering, Next.js, AWS",
+    desc: "Full stack engineering team, AWS, Next.js",
     img: { src: "/tasklabs.jpeg", alt: "TaskLabs Inc." },
   },
 ];
