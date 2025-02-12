@@ -17,7 +17,7 @@ function Landing() {
         <p className="text-sm text-black/50 md:w-auto w-[70vw]">
           I am a software developer who loves building stuff on the web
         </p>
-        <Socials color={undefined} />
+        <Socials className="flex flex-row items-center md:mx-0 mx-auto" />
       </div>
     </div>
   );

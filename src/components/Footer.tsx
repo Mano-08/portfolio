@@ -7,7 +7,7 @@ function Footer() {
       <p className="md:text-sm text-xs text-black/50">
         &copy; {new Date().getFullYear()} Mano
       </p>
-      <Socials color={"rgb(0 0 0 / 0.5)"} />
+      <Socials className="flex flex-row items-center text-black/50" />
     </footer>
   );
 }

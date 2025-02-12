@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #f8fbf8;
   --foreground: #0b1215;
 }
 
@@ -21,4 +21,12 @@ body {
 
 img {
   user-select: none;
+}
+
+.noise {
+  /* background-color: #f8fbf8;
+  background-image: url(/noise.svg); */
+  /* background: linear-gradient(30deg, var(--background), rgb(255, 56, 56)),
+    url(/noise.svg); */
+  background: linear-gradient(to right, #fefefe, transparent), url(/noise.svg);
 }
