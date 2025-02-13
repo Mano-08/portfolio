@@ -23,7 +23,7 @@ function Page() {
         — clean, satisfying aesthetics always win me over!
       </p>
 
-      <div className="grid grid-cols-1 my-6 justify-between items-center gap-3 md:grid-cols-2">
+      <div className="grid grid-cols-1 my-6 justify-items-center items-center gap-3 md:grid-cols-2">
         {["/cat.jpg", "/wolf.jpg"].map((img, index) => (
           <div
             key={index}
