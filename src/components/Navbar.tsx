@@ -6,7 +6,7 @@ const cursive = Cedarville_Cursive({ weight: "400", subsets: ["latin"] });
 
 function Navbar() {
   return (
-    <nav className="flex flex-row items-center justify-between py-5">
+    <nav className="flex flex-row items-center justify-between py-5  border-b border-solid border-neutral-300">
       <Link href="/" className={cursive.className + " font-bold"}>
         MANO
       </Link>

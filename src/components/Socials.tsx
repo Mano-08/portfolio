@@ -37,9 +37,12 @@ function Socials({ className }: { className: string }) {
       >
         <Mail className="h-4 w-4" />
       </Link>
-      <button className="px-1 text-xs text-green-500/80 py-0.5 rounded-full border border-solid border-green-500 flex flex-row items-center gap-1">
+      <Link
+        href="mailto:mano.26q@gmail.com"
+        className="px-1 text-xs text-green-500/80 py-0.5 rounded-full border border-solid border-green-500 flex flex-row items-center gap-1"
+      >
         <div className="animate-pulse">&bull;</div>open to work
-      </button>
+      </Link>
     </div>
   );
 }

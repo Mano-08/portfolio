@@ -4,7 +4,7 @@ import Socials from "./Socials";
 
 function Landing() {
   return (
-    <div className="w-full justify-center h-[85vh] flex flex-col md:flex-row items-center gap-5">
+    <div className="w-full mt-16 mb-6 justify-center flex flex-col md:flex-row items-center gap-5">
       <Image
         height={120}
         width={120}
