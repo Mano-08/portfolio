@@ -5,13 +5,9 @@ function Page() {
   return (
     <main className="py-10 ">
       <p className="font-sm md:font-base text-black/50">
-        Hello there! I am a 21 year old Computer Science &amp; Engineering
-        student in my final year of B.Tech at NIT Andhra. But hey, this page
-        isn&apos;t about my life inside the terminal, but everything beyond the
-        CLI! I have a soft spot for painting, sketching, and crafting. I tend to
-        pause and admire beautifully designed architectures, rich in fine
-        details. I absolutely love when products aren&apos;t just functional but
-        also well designed ✨ — clean, satisfying aesthetics always win me over!
+        hello there! i am a 21 year old computer science and engineering student
+        from nit andhra pradesh. outside the CLI, i like to paint, sketch, and
+        do craft. i often pause and admire beautiful architectures of buildings.
       </p>
 
       <div className="grid grid-cols-1 my-6 justify-items-center items-center gap-3 md:grid-cols-2">
