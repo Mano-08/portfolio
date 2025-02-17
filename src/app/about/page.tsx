@@ -5,9 +5,9 @@ function Page() {
   return (
     <main className="py-10 ">
       <p className="font-sm md:font-base text-black/50">
-        hello there! i am a 21 year old computer science and engineering student
-        from nit andhra pradesh. outside the CLI, i like to paint, sketch, and
-        do craft. i often pause and admire beautiful architectures of buildings.
+        Hello there! I am a 21 year old computer science and engineering student
+        from nit andhra pradesh. Outside the CLI, I like to paint, sketch, and
+        do craft. I often pause and admire beautiful architectures of buildings.
       </p>
 
       <div className="grid grid-cols-1 my-6 justify-items-center items-center gap-3 md:grid-cols-2">
