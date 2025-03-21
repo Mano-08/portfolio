@@ -55,18 +55,18 @@ function Projects() {
           {projects.map((project, index) => (
             <div
               key={project.title}
-              className="flex flex-col gap-2 p-2.5 hover:p-3 hover:border-black/50 transition-all duration-500 border rounded-md border-solid border-neutral-300"
-
-              // className="flex flex-col gap-2 p-2.5 hover:p-3 transition-all duration-500 hover:border rounded-md border-solid hover:border-neutral-700"
+              className="flex flex-col gap-2 p-2.5 group border rounded-md border-solid border-neutral-300"
             >
-              <Image
-                src={project.img.src}
-                alt={project.img.alt}
-                height={500}
-                width={500}
-                priority
-                className="rounded h-[200px] w-auto object-cover"
-              />
+              <div className="overflow-hidden rounded">
+                <Image
+                  src={project.img.src}
+                  alt={project.img.alt}
+                  height={500}
+                  width={500}
+                  priority
+                  className="h-[200px] w-full object-cover transition-all duration-500 group-hover:scale-105"
+                />
+              </div>
               <div className="flex flex-row items-start justify-between">
                 <div>
                   <h1 className="font-medium md:text-base text-sm">
@@ -102,18 +102,18 @@ function Projects() {
           {FreelanceProjects.map((project, index) => (
             <div
               key={project.title}
-              className="flex flex-col gap-2 p-2.5 hover:p-3 hover:border-black/50 transition-all duration-500 border rounded-md border-solid border-neutral-300"
-
-              // className="flex flex-col gap-2 p-2.5 hover:p-3 transition-all duration-500 hover:border rounded-md border-solid hover:border-neutral-700"
+              className="flex flex-col gap-2 p-2.5 group border rounded-md border-solid border-neutral-300"
             >
-              <Image
-                src={project.img.src}
-                alt={project.img.alt}
-                height={500}
-                width={500}
-                priority
-                className="rounded h-[200px] w-auto object-cover"
-              />
+              <div className="overflow-hidden rounded">
+                <Image
+                  src={project.img.src}
+                  alt={project.img.alt}
+                  height={500}
+                  width={500}
+                  priority
+                  className="h-[200px] group-hover:scale-105 transition-all duration-500 w-auto object-cover"
+                />
+              </div>
               <div className="flex flex-row items-start justify-between">
                 <div>
                   <h1 className="font-medium text-sm md:text-base">

@@ -39,7 +39,7 @@ function Work() {
                 width={50}
                 src={experience.img.src}
                 alt={experience.img.alt}
-                className="rounded-md"
+                className="rounded-lg"
                 priority
               />
               <div>
