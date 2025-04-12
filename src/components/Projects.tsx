@@ -1,5 +1,5 @@
 import React from "react";
-import { Github, Globe } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -49,15 +49,18 @@ function Projects() {
   return (
     <>
       <section>
-        <p className="text-sm md:text-base">projects</p>
+        <p className="text-sm md:text-base font-medium">Projects</p>
 
         <div className="grid md:grid-cols-2 grid-cols-1 my-3 md:my-5 gap-3">
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <div
               key={project.title}
-              className="flex flex-col gap-2 p-2.5 group border rounded-md border-solid border-neutral-300"
+              className="flex flex-col p-2.5 group border rounded-md border-solid border-neutral-300"
             >
-              <div className="overflow-hidden rounded">
+              <Link
+                href={project.live}
+                className="overflow-hidden rounded mb-2"
+              >
                 <Image
                   src={project.img.src}
                   alt={project.img.alt}
@@ -66,45 +69,44 @@ function Projects() {
                   priority
                   className="h-[200px] w-full object-cover transition-all duration-500 group-hover:scale-105"
                 />
-              </div>
-              <div className="flex flex-row items-start justify-between">
-                <div>
-                  <h1 className="font-medium md:text-base text-sm">
-                    {project.title}{" "}
-                  </h1>
-                  <p className="opacity-50 text-xs md:text-sm">
-                    {project.desc}
-                  </p>
-                  <div className="flex flex-row items-center">
-                    <Link
-                      className="hover:bg-neutral-200 p-2 rounded "
-                      href={project.github}
-                    >
-                      <Github className="h-4 w-4" />
-                    </Link>
-                    <Link
-                      className="hover:bg-neutral-200 p-2 rounded "
-                      href={project.live}
-                    >
-                      <Globe className="h-4 w-4" />
-                    </Link>
-                  </div>
+              </Link>
+              <div className="flex flex-row items-center justify-between">
+                <h1 className="font-medium md:text-base text-sm">
+                  {project.title}
+                </h1>
+
+                <div className="flex flex-row items-center">
+                  <Link
+                    className="hover:bg-neutral-200 p-2 rounded "
+                    href={project.github}
+                  >
+                    <Github className="h-4 w-4" />
+                  </Link>
+                  <Link
+                    className="hover:bg-neutral-200 p-2 rounded "
+                    href={project.live}
+                  >
+                    <ExternalLink className="h-4 w-4" />
+                  </Link>
                 </div>
-                <p className="text-sm md:text-base">0{index + 1}</p>
               </div>
+              <p className="opacity-50 text-xs md:text-sm">{project.desc}</p>
             </div>
           ))}
         </div>
       </section>
       <section>
-        <p className="text-sm md:text-base">freelance</p>
-        <div className="grid md:grid-cols-2 grid-cols-1 my-3 md:my-5 gap-3">
-          {FreelanceProjects.map((project, index) => (
+        <p className="text-sm md:text-base">Freelance</p>
+        <div className="grid md:grid-cols-2 grid-cols-1 my-1 md:my-3 gap-3">
+          {FreelanceProjects.map((project) => (
             <div
               key={project.title}
-              className="flex flex-col gap-2 p-2.5 group border rounded-md border-solid border-neutral-300"
+              className="flex flex-col p-2.5 group border rounded-md border-solid border-neutral-300"
             >
-              <div className="overflow-hidden rounded">
+              <Link
+                href={project.live}
+                className="overflow-hidden rounded mb-2"
+              >
                 <Image
                   src={project.img.src}
                   alt={project.img.alt}
@@ -113,43 +115,38 @@ function Projects() {
                   priority
                   className="h-[200px] group-hover:scale-105 transition-all duration-500 w-auto object-cover"
                 />
-              </div>
+              </Link>
               <div className="flex flex-row items-start justify-between">
-                <div>
-                  <h1 className="font-medium text-sm md:text-base">
-                    {project.title}
-                  </h1>
-                  <p className="text-black/50 text-xs md:text-sm">
-                    {project.desc}
-                  </p>
-                  <div className="flex flex-row my-1 items-center gap-1 text-xs md:text-sm ">
-                    {project.tags.map((tag) => (
-                      <div
-                        key={tag}
-                        className="rounded-full px-4 py-0.5 border border-solid hover:text-black/80 hover:border-black/80 text-black/50 border-black/50 transition-all duration-300 cursor-default"
-                      >
-                        {tag}
-                      </div>
-                    ))}
-                  </div>
+                <h1 className="font-medium text-sm md:text-base">
+                  {project.title}
+                </h1>
 
-                  <div className="flex flex-row items-center">
-                    <Link
-                      className="hover:bg-neutral-200 p-2 rounded "
-                      href={project.github}
-                    >
-                      <Github className="h-4 w-4" />
-                    </Link>
-                    <Link
-                      className="hover:bg-neutral-200 p-2 rounded "
-                      href={project.live}
-                    >
-                      <Globe className="h-4 w-4" />
-                    </Link>
-                  </div>
+                <div className="flex flex-row items-center">
+                  <Link
+                    className="hover:bg-neutral-200 p-2 rounded "
+                    href={project.github}
+                  >
+                    <Github className="h-4 w-4" />
+                  </Link>
+                  <Link
+                    className="hover:bg-neutral-200 p-2 rounded "
+                    href={project.live}
+                  >
+                    <ExternalLink className="h-4 w-4" />
+                  </Link>
                 </div>
-                <p className="text-sm md:text-base">0{index + 1}</p>
               </div>
+              <div className="flex flex-row my-1 items-center gap-1 text-xs md:text-sm ">
+                {project.tags.map((tag) => (
+                  <div
+                    key={tag}
+                    className="cursor-pointer rounded-full px-4 py-0.5 border border-solid hover:text-black/80 hover:border-black/80 text-black/50 border-black/50 transition-all duration-300"
+                  >
+                    {tag}
+                  </div>
+                ))}
+              </div>
+              <p className="text-black/50 text-xs md:text-sm">{project.desc}</p>
             </div>
           ))}
         </div>

@@ -5,6 +5,7 @@
 :root {
   --background: #f8fbf8;
   --foreground: #0b1215;
+  --base: #f5f5f7;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -24,5 +25,6 @@ img {
 }
 
 .noise {
-  background: linear-gradient(to right, #fefefe, transparent), url(/noise.svg);
+  /* background: linear-gradient(to right, #fefefe, transparent), url(/noise.svg); */
+  background-color: var(--base);
 }

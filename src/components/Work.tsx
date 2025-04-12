@@ -3,18 +3,18 @@ import Image from "next/image";
 
 const experiences = [
   {
-    title: "Broadridge | Intern",
-    duration: "Jan 2025 - present",
-    desc: "Site reliability engineering team, Kubernetes, Ansible",
+    title: "Broadridge",
+    duration: "Jan - Jul 2025",
+    desc: "Intern | Site Reliability Engineering",
     img: {
       src: "/broadridge.jpeg",
       alt: "Broadridge Financial Solutions",
     },
   },
   {
-    title: "TaskLabs Inc. | SDE Intern",
-    duration: "May 2023 - Jul 2023",
-    desc: "Full stack engineering team, AWS, Next.js",
+    title: "TaskLabs",
+    duration: "Mar - Aug 2023",
+    desc: "SDE Intern | Fullstack Engineering",
     img: { src: "/tasklabs.jpeg", alt: "TaskLabs Inc." },
   },
 ];
@@ -26,34 +26,28 @@ const experiences = [
 function Work() {
   return (
     <section>
-      <p className="text-sm md:text-base">work</p>
-      <div className="flex flex-col my-3 md:my-5 border-t border-solid border-neutral-300">
+      <p className="text-sm md:text-base font-medium">Work</p>
+      <div className="flex flex-col my-1 md:my-3 border-t border-dotted border-neutral-300">
         {experiences.map((experience, index) => (
           <div
             key={index}
-            className="flex flex-row items-start justify-between border-b border-solid border-neutral-300 py-5"
+            className="flex flex-row items-center justify-between border-b border-dotted border-neutral-300 py-3"
           >
-            <div className="flex flex-row items-start gap-2">
+            <div className="flex flex-row items-center gap-2">
               <Image
-                height={50}
-                width={50}
+                height={35}
+                width={35}
                 src={experience.img.src}
                 alt={experience.img.alt}
-                className="rounded-lg"
+                className="rounded-md"
                 priority
               />
-              <div>
-                <h1 className="font-medium text-sm md:text-base">
-                  {experience.title}
-                </h1>
-                <p className="text-black/50 text-xs md:text-sm">
-                  {experience.duration}
-                  <br />
-                  {experience.desc}
-                </p>
-              </div>
+              <h1 className="text-sm md:text-base text-black/90 font-medium">
+                {experience.title}
+              </h1>
+              <p className="text-black/50 text-sm">{experience.desc}</p>
             </div>
-            <p className="text-sm md:text-base">0{index + 1}</p>
+            <p className="text-sm text-black/50">{experience.duration}</p>
           </div>
         ))}
       </div>

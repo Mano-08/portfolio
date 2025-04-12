@@ -1,17 +1,10 @@
 import React from "react";
 import Link from "next/link";
-import { Github, Linkedin, Mail, Send, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 
-function Socials({ className }: { className: string }) {
+function Socials({ className }: { className?: string }) {
   return (
     <div className={className}>
-      <Link
-        className="hover:bg-neutral-200 p-1.5 rounded "
-        href="https://x.com/mano__08"
-      >
-        <Twitter className="h-4 w-4" />
-      </Link>
-
       <Link
         className="hover:bg-neutral-200 p-1.5 rounded "
         href="https://github.com/Mano-08"
@@ -27,9 +20,9 @@ function Socials({ className }: { className: string }) {
       </Link>
       <Link
         className="hover:bg-neutral-200 p-1.5 rounded "
-        href="https://t.me/mano_47"
+        href="https://x.com/mano__08"
       >
-        <Send className="h-4 w-4" />
+        <Twitter className="h-4 w-4" />
       </Link>
       <Link
         className="hover:bg-neutral-200 p-1.5 rounded "

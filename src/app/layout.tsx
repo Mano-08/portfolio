@@ -1,12 +1,7 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-
-const inter = Inter({
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Mano | Portfolio",
@@ -22,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} noise antialiased  max-w-[2000px] w-screen md:p-0 px-4 md:w-[600px] mx-auto`}
+        className={`noise antialiased font-sans max-w-[2000px] w-screen md:p-0 px-4 md:w-[600px] mx-auto`}
       >
         <Navbar />
         {children}
