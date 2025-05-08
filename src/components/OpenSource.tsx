@@ -5,7 +5,7 @@ import React from "react";
 function OpenSource() {
   return (
     <section>
-      <p className="text-sm md:text-base font-medium">Open source </p>
+      <p className="text-sm md:text-base font-medium">Bounties / Open Source</p>
       <div className="flex flex-col my-1 md:my-3 border-t border-dotted border-neutral-300">
         <Link
           href="https://github.com/NeurProjects/neur-app/pull/130"
