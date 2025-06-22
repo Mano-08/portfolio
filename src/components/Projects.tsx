@@ -7,7 +7,7 @@ const FreelanceProjects = [
   {
     title: "Mint for the Children",
     desc: "",
-    tags: ["front-end", "blockchain"],
+    tags: ["zora", "blockchain"],
     img: {
       src: "/projects/mint.png",
       alt: "For the children",
@@ -31,17 +31,27 @@ const FreelanceProjects = [
 const projects = [
   {
     title: "Battleship",
-    desc: "Two player online battleship game, conquer the seas",
+    desc: "Two player online battleship game",
     github: "https://github.com/Mano-08/battleship",
-    img: { src: "/projects/battleship.png", alt: "Battleship" },
     live: "https://playbattleship.vercel.app/",
   },
   {
     title: "Ideal Cart",
     desc: "Chrome extension to save products across a multitude of websites",
     github: "https://github.com/Mano-08/idealCart",
-    img: { src: "/projects/idealcart.png", alt: "ideal cart" },
     live: "https://chromewebstore.google.com/detail/idealcart-your-shopping-p/ofbkfkeekmaiigkhoinhlknpniijddba",
+  },
+  {
+    title: "Zelix - Secure Bookmarks",
+    desc: "Keep your bookmarks private with a password",
+    github: null,
+    live: "https://chromewebstore.google.com/detail/eikknpnckalfaafkjkkjbikfbkbkdnfc?utm_source=portfolio",
+  },
+  {
+    title: "MySol",
+    desc: "Reclaim your forgotten solana rents",
+    github: null,
+    live: "https://mysol-phi.vercel.app/",
   },
 ];
 
@@ -49,7 +59,7 @@ function Projects() {
   return (
     <>
       <section>
-        <p className="text-sm md:text-base font-medium">Projects</p>
+        <p className="text-sm md:text-lg font-semibold">Projects</p>
 
         <div className="grid md:grid-cols-2 grid-cols-1 my-3 md:my-5 gap-3">
           {projects.map((project) => (
@@ -57,31 +67,20 @@ function Projects() {
               key={project.title}
               className="flex flex-col p-2.5 group border rounded-md border-solid border-neutral-300"
             >
-              <Link
-                href={project.live}
-                className="overflow-hidden rounded mb-2"
-              >
-                <Image
-                  src={project.img.src}
-                  alt={project.img.alt}
-                  height={500}
-                  width={500}
-                  priority
-                  className="h-[200px] w-full object-cover transition-all duration-500 group-hover:scale-105"
-                />
-              </Link>
               <div className="flex flex-row items-center justify-between">
-                <h1 className="font-medium md:text-base text-sm">
+                <h1 className="font-medium md:text-base text-sm text-black/90">
                   {project.title}
                 </h1>
 
                 <div className="flex flex-row items-center">
-                  <Link
-                    className="hover:bg-neutral-200 p-2 rounded "
-                    href={project.github}
-                  >
-                    <Github className="h-4 w-4" />
-                  </Link>
+                  {project.github && (
+                    <Link
+                      className="hover:bg-neutral-200 p-2 rounded "
+                      href={project.github}
+                    >
+                      <Github className="h-4 w-4" />
+                    </Link>
+                  )}
                   <Link
                     className="hover:bg-neutral-200 p-2 rounded "
                     href={project.live}
@@ -96,7 +95,7 @@ function Projects() {
         </div>
       </section>
       <section>
-        <p className="text-sm md:text-base">Freelance</p>
+        <p className="text-sm md:text-lg font-semibold">Freelance</p>
         <div className="grid md:grid-cols-2 grid-cols-1 my-1 md:my-3 gap-3">
           {FreelanceProjects.map((project) => (
             <div
@@ -113,7 +112,7 @@ function Projects() {
                   height={500}
                   width={500}
                   priority
-                  className="h-[200px] group-hover:scale-105 transition-all duration-500 w-auto object-cover"
+                  className="h-[200px] w-full group-hover:scale-105 transition-all duration-500 object-cover"
                 />
               </Link>
               <div className="flex flex-row items-start justify-between">

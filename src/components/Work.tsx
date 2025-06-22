@@ -5,7 +5,8 @@ const experiences = [
   {
     title: "Broadridge",
     duration: "Jan - Jul 2025",
-    desc: "Intern | Site Reliability Engineering",
+    desc: "SRE Intern | Go, Kubernetes, React",
+    shortDesc: "SRE Intern",
     img: {
       src: "/broadridge.jpeg",
       alt: "Broadridge Financial Solutions",
@@ -14,7 +15,8 @@ const experiences = [
   {
     title: "TaskLabs",
     duration: "Mar - Aug 2023",
-    desc: "SDE Intern | Fullstack Engineering",
+    desc: "SDE Intern | AWS, Next.js, Python",
+    shortDesc: "SDE Intern",
     img: { src: "/tasklabs.jpeg", alt: "TaskLabs Inc." },
   },
 ];
@@ -26,7 +28,7 @@ const experiences = [
 function Work() {
   return (
     <section>
-      <p className="text-sm md:text-base font-medium">Work</p>
+      <p className="text-sm md:text-lg font-semibold">Work</p>
       <div className="flex flex-col my-1 md:my-3 border-t border-dotted border-neutral-300">
         {experiences.map((experience, index) => (
           <div
@@ -42,10 +44,13 @@ function Work() {
                 className="rounded-md"
                 priority
               />
-              <h1 className="text-sm md:text-base text-black/90 font-medium">
+              <h1 className="text-sm text-black/90 md:text-base font-medium">
                 {experience.title}
               </h1>
-              <p className="text-black/50 text-sm">{experience.desc}</p>
+              <p className="text-black/50 text-xs md:text-sm">
+                <span className="hidden md:block">{experience.desc}</span>{" "}
+                <span className="md:hidden block">{experience.shortDesc}</span>
+              </p>
             </div>
             <p className="text-sm text-black/50">{experience.duration}</p>
           </div>
