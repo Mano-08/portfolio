@@ -5,8 +5,8 @@ const experiences = [
   {
     title: "Broadridge",
     duration: "Jan - Jul 2025",
-    desc: "SRE Intern | Go, Kubernetes, React",
-    shortDesc: "SRE Intern",
+    desc: "SWE Intern | Go, Kubernetes, React",
+    shortDesc: "SWE Intern",
     img: {
       src: "/broadridge.jpeg",
       alt: "Broadridge Financial Solutions",
