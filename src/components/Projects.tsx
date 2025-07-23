@@ -36,12 +36,6 @@ const projects = [
     live: "https://playbattleship.vercel.app/",
   },
   {
-    title: "Ideal Cart",
-    desc: "Chrome extension to save products across a multitude of websites",
-    github: "https://github.com/Mano-08/idealCart",
-    live: "https://chromewebstore.google.com/detail/idealcart-your-shopping-p/ofbkfkeekmaiigkhoinhlknpniijddba",
-  },
-  {
     title: "Zelix - Secure Bookmarks",
     desc: "Keep your bookmarks private with a password",
     github: null,
