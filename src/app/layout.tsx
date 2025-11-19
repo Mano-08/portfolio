@@ -4,9 +4,9 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
-  title: "Mano | Portfolio",
+  title: "Mano ",
   description:
-    "Helping brands design and development web solutions, based in Bengaluru, India.",
+    "Find my projects, open source contributions, freelance projects and more!",
 };
 
 export default function RootLayout({
