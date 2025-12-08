@@ -9,7 +9,7 @@ function Landing() {
     <div className="w-full overflow-hidden text-justify text-sm md:text-base">
       {/* <div className="w-full h-[250px] bg-red-800"></div> */}
       <Image
-        src="https://res.cloudinary.com/djwhxlpk5/image/upload/v1765157668/header_qgnmco.jpg"
+        src={"/header.jpg"}
         alt={"Header image"}
         width={750}
         height={250}
@@ -17,7 +17,7 @@ function Landing() {
       />
       {/* <div className="rounded-2xl h-28 w-28 relative -top-14 left-7 bg-yellow-500"></div> */}
       <Image
-        src="https://res.cloudinary.com/djwhxlpk5/image/upload/v1765157615/er2_p9poqp.jpg"
+        src={"/er2.jpg"}
         alt={"Me"}
         width={112}
         height={112}
