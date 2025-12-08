@@ -8,22 +8,22 @@ function Landing() {
   return (
     <div className="w-full overflow-hidden text-justify text-sm md:text-base">
       {/* <div className="w-full h-[250px] bg-red-800"></div> */}
-      <Image
+     {/* <Image
         src={"/header.jpg"}
         alt={"Header image"}
         width={750}
         height={250}
         className="w-full h-[250px] object-cover relative"
-      />
+      />*/}
       {/* <div className="rounded-2xl h-28 w-28 relative -top-14 left-7 bg-yellow-500"></div> */}
       <Image
         src={"/er2.jpg"}
         alt={"Me"}
         width={112}
         height={112}
-        className="rounded-2xl hover:scale-105 rotate-1 hover:rotate-3 transition-transform duration-500 h-32 w-28 relative object-cover -top-14 left-4 md:left-7"
+        className="rounded-2xl hover:scale-105 rotate-1 hover:rotate-3 transition-transform duration-500 h-32 w-28 relative object-cover left-4 md:left-7"
       />
-      <div className="flex flex-row items-start justify-between md:px-7 px-4 relative -top-10 mb-4">
+      <div className="flex flex-row items-start justify-between md:px-7 px-4 relative mb-4">
         <div>
           <h1
             className={`font-bold text-[45px] text-black my-2 ${fornier.className}`}
