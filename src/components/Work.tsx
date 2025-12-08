@@ -1,22 +1,29 @@
 import React from "react";
-import Image from "next/image";
+import { fornier } from "@/app/fonts/fonts";
 
 const experiences = [
   {
-    title: "Broadridge",
-    duration: "Jan - Jul 2025",
-    desc: "SWE Intern | Go, Kubernetes, React",
-    shortDesc: "SWE Intern",
+    title: "Broadridge Financial Solutions",
+    duration: "January 2025 - Present",
+    role: "Member Technical",
+    desc: [
+      `SWE intern; Winter 2025; Automated audit report generation with distributed pipelines.`,
+      `SWE; August 2025 to present; Optimizing Message Queue validation pipelines.`,
+    ],
+    shortRole: "Member Technical",
     img: {
       src: "/broadridge.jpeg",
       alt: "Broadridge Financial Solutions",
     },
   },
   {
-    title: "TaskLabs",
-    duration: "Mar - Aug 2023",
-    desc: "SDE Intern | AWS, Next.js, Python",
-    shortDesc: "SDE Intern",
+    title: "TaskLabs Inc.",
+    duration: "March 2023 - August 2023",
+    role: "Member Technical",
+    desc: [
+      `SDE intern; March to August 2023; Migrated backend service to WASM.`,
+    ],
+    shortRole: "Member Technical",
     img: { src: "/tasklabs.jpeg", alt: "TaskLabs Inc." },
   },
 ];
@@ -27,32 +34,47 @@ const experiences = [
 
 function Work() {
   return (
-    <section>
-      <p className="text-sm md:text-lg font-semibold">Work</p>
+    <section className="md:px-7 px-4">
+      <p className="text-sm md:text-lg font-medium">Professional Experience</p>
+
+      {/* <p className={`text-sm md:text-[30px] font-medium ${fornier.className}`}>
+        Professional Experience
+      </p> */}
+
       <div className="flex flex-col my-1 md:my-3 border-t border-dotted border-neutral-300">
         {experiences.map((experience, index) => (
           <div
             key={index}
-            className="flex flex-row items-center justify-between border-b border-dotted border-neutral-300 py-3"
+            className="flex flex-col items-center justify-between border-b border-dotted border-neutral-300 py-3"
           >
-            <div className="flex flex-row items-center gap-2">
-              <Image
-                height={35}
-                width={35}
-                src={experience.img.src}
-                alt={experience.img.alt}
-                className="rounded-md"
-                priority
-              />
-              <h1 className="text-sm text-black/90 md:text-base font-medium">
-                {experience.title}
-              </h1>
-              <p className="text-black/50 text-xs md:text-sm">
-                <span className="hidden md:block">{experience.desc}</span>{" "}
-                <span className="md:hidden block">{experience.shortDesc}</span>
-              </p>
+            <div className="flex flex-row items-center justify-between w-full mb-2">
+              <div className="flex flex-row items-center gap-2">
+                {/* <Image
+                  height={45}
+                  width={45}
+                  src={experience.img.src}
+                  alt={experience.img.alt}
+                  className="rounded-sm"
+                  priority
+                /> */}
+                <h1 className="text-sm text-black md:text-base font-medium">
+                  {experience.title}
+                </h1>
+              </div>
+              <p className="text-sm text-black/50">{experience.duration}</p>
             </div>
-            <p className="text-sm text-black/50">{experience.duration}</p>
+            <div className="text-black/50 text-xs md:text-sm md:px-7 px-4 w-full">
+              <ul className="hidden md:block">
+                {experience.desc.map((desc) => {
+                  return (
+                    <li key={desc} className="list-disc">
+                      {desc}
+                    </li>
+                  );
+                })}
+              </ul>
+              <span className="md:hidden block">{experience.shortRole}</span>
+            </div>
           </div>
         ))}
       </div>
