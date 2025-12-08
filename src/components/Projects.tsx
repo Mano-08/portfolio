@@ -8,7 +8,7 @@ const FreelanceProjects = [
     desc: "",
     tags: ["zora", "blockchain"],
     img: {
-      src: "/projects/mint.png",
+      src: "https://res.cloudinary.com/djwhxlpk5/image/upload/v1765157639/mint_dyce4q.png",
       alt: "For the children",
     },
     github: "https://github.com/Nith567/mintForchildren",
@@ -19,7 +19,7 @@ const FreelanceProjects = [
     desc: "",
     tags: ["full-stack", "dApp"],
     img: {
-      src: "/projects/smart.png",
+      src: "https://res.cloudinary.com/djwhxlpk5/image/upload/v1765157641/smart_refybx.png",
       alt: "50MM Collections",
     },
     github: "https://github.com/Mano-08/theSmartWallet",
