@@ -23,7 +23,7 @@ function Landing() {
         height={112}
         className="rounded-2xl hover:scale-105 rotate-1 hover:rotate-3 transition-transform duration-500 h-32 w-28 relative object-cover left-4 md:left-7"
       />
-      <div className="flex flex-row items-start justify-between md:px-7 px-4 relative mb-4">
+      <div className="flex flex-row items-start justify-between md:px-7 px-4 relative my-4">
         <div>
           <h1
             className={`font-bold text-[45px] text-black my-2 ${fornier.className}`}
