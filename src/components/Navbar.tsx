@@ -1,7 +1,5 @@
 import React from "react";
-import { Cedarville_Cursive } from "next/font/google";
 import Link from "next/link";
-import Socials from "./Socials";
 import { fornier } from "@/app/fonts/fonts";
 
 function Navbar() {

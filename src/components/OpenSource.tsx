@@ -1,4 +1,3 @@
-import { fornier } from "@/app/fonts/fonts";
 import { ArrowUpRight, GitMerge } from "lucide-react";
 import Link from "next/link";
 import React from "react";

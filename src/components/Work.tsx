@@ -1,5 +1,4 @@
 import React from "react";
-import { fornier } from "@/app/fonts/fonts";
 
 const experiences = [
   {
