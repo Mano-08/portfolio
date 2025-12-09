@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <>
       <div className="h-5 w-full transparent"></div>
-      <nav className="flex flex-row items-center justify-between py-4 px-4 sticky top-0 md:px-0 left-0 right-0 bg-[--base] z-[500]">
+      <nav className="flex md:px-7 flex-row items-center justify-between py-4 px-4 sticky top-0 left-0 right-0 bg-[--base] z-[500]">
         <Link href="/" className={fornier.className + " text-2xl"}>
           Mano
         </Link>

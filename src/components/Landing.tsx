@@ -3,12 +3,13 @@ import Link from "next/link";
 import Socials from "./Socials";
 import { fornier } from "@/app/fonts/fonts";
 import Image from "next/image";
+import { Fade } from "react-awesome-reveal";
 
 function Landing() {
   return (
     <div className="w-full overflow-hidden text-justify text-sm md:text-base">
       {/* <div className="w-full h-[250px] bg-red-800"></div> */}
-     {/* <Image
+      {/* <Image
         src={"/header.jpg"}
         alt={"Header image"}
         width={750}
@@ -16,52 +17,60 @@ function Landing() {
         className="w-full h-[250px] object-cover relative"
       />*/}
       {/* <div className="rounded-2xl h-28 w-28 relative -top-14 left-7 bg-yellow-500"></div> */}
-      <Image
-        src={"/er2.jpg"}
-        alt={"Me"}
-        width={112}
-        height={112}
-        className="rounded-2xl hover:scale-105 rotate-1 hover:rotate-3 transition-transform duration-500 h-32 w-28 relative object-cover left-4 md:left-7"
-      />
+      <Fade duration={900} fraction={0.5} triggerOnce>
+        <Image
+          src={"/er2.jpg"}
+          alt={"Me"}
+          width={112}
+          height={112}
+          className="rounded-2xl hover:scale-105 rotate-1 hover:rotate-3 transition-transform duration-500 h-32 w-28 relative object-cover left-4 md:left-7"
+        />
+      </Fade>
       <div className="flex flex-row items-start justify-between md:px-7 px-4 relative my-4">
-        <div>
-          <h1
-            className={`font-bold text-[45px] text-black my-2 ${fornier.className}`}
+        <Fade duration={900} fraction={0.5} triggerOnce>
+          <div>
+            <h1
+              className={`font-bold text-[45px] text-black my-2 ${fornier.className}`}
+            >
+              Mano
+            </h1>
+            <p className="text-sm">21 &bull; engineer &bull; developer</p>
+          </div>
+
+          <Socials className="flex flex-row items-center text-black/90" />
+        </Fade>
+      </div>
+
+      <Fade duration={900} fraction={0.5} triggerOnce>
+        <div className="md:px-7 px-4">
+          Hi! I am Mano, a Computer Science and Engineering undergraduate from
+          National Institute of Technology, Andhra Pradesh. Cryptography,
+          Blockchain, NLP/ML, and Web are my areas of interest.
+          <br /> <br />I like building{" "}
+          <Link
+            href="https://playbattleship.vercel.app/"
+            className="underline decoration-dotted "
           >
-            Mano
-          </h1>
-          <p className="text-sm">21 &bull; engineer &bull; developer</p>
+            games
+          </Link>{" "}
+          and contributing to{" "}
+          <Link
+            href="https://github.com/Mano-08"
+            className="underline decoration-dotted "
+          >
+            open source
+          </Link>{" "}
+          when free. I also enjoy meeting new people and learning new things.
+          You can drop me a{" "}
+          <Link
+            className="underline decoration-dotted "
+            href="mailto:mano.26q@gmail.com"
+          >
+            mail
+          </Link>{" "}
+          to discuss anything or just to say Hi!
         </div>
-        <Socials className="flex flex-row items-center text-black/90" />
-      </div>
-      <div className="md:px-7 px-4">
-        Hi! I am Mano, a Computer Science and Engineering undergraduate from
-        National Institute of Technology, Andhra Pradesh. Cryptography,
-        Blockchain, NLP/ML, and Web are my areas of interest.
-        <br /> <br />I like building{" "}
-        <Link
-          href="https://playbattleship.vercel.app/"
-          className="underline decoration-dotted "
-        >
-          games
-        </Link>{" "}
-        and contributing to{" "}
-        <Link
-          href="https://github.com/Mano-08"
-          className="underline decoration-dotted "
-        >
-          open source
-        </Link>{" "}
-        when free. I also enjoy meeting new people and learning new things. You
-        can drop me a{" "}
-        <Link
-          className="underline decoration-dotted "
-          href="mailto:mano.26q@gmail.com"
-        >
-          mail
-        </Link>{" "}
-        to discuss anything or just to say Hi!
-      </div>
+      </Fade>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import { ExternalLink, Github } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { Fade } from "react-awesome-reveal";
 
 const FreelanceProjects = [
   {
@@ -107,18 +108,33 @@ function Projects() {
   return (
     <>
       <section className="md:px-7 px-4">
-        <p className="text-sm md:text-lg font-semibold">Projects</p>
+        <Fade
+          cascade={true}
+          damping={0.2}
+          duration={900}
+          fraction={0.5}
+          triggerOnce
+        >
+          <p className="text-sm md:text-lg font-semibold">Projects</p>
+        </Fade>
 
         <div className="grid grid-cols-1 my-3 md:my-5 gap-3">
-          {projects.map((project: Project) => (
-            <div
-              key={project.title}
-              // onMouseEnter={() => setHoveredProject(project)}
-              // onMouseLeave={() => setHoveredProject(null)}
-              // onMouseMove={handleMouseMove}
-              className="flex flex-col p-2.5 group border rounded-md border-solid border-neutral-300"
-            >
-              {/* {hoveredProject?.title === project.title && (
+          <Fade
+            cascade={true}
+            damping={0.2}
+            duration={900}
+            fraction={0.5}
+            triggerOnce
+          >
+            {projects.map((project: Project) => (
+              <div
+                key={project.title}
+                // onMouseEnter={() => setHoveredProject(project)}
+                // onMouseLeave={() => setHoveredProject(null)}
+                // onMouseMove={handleMouseMove}
+                className="flex flex-col p-2.5 group border rounded-md border-solid border-neutral-300"
+              >
+                {/* {hoveredProject?.title === project.title && (
                 <div
                   className="fixed pointer-events-none z-50 px-8 py-16 bg-cyan-300 transition-opacity duration-500"
                   style={{
@@ -134,7 +150,7 @@ function Projects() {
                   />
                 </div>
               )} */}
-              {/* <Link
+                {/* <Link
                 href={project.live}
                 className="overflow-hidden rounded mb-2"
               >
@@ -147,31 +163,32 @@ function Projects() {
                   className="h-[200px] w-full group-hover:scale-105 transition-all duration-500 object-cover"
                 />
               </Link> */}
-              <div className="flex flex-row items-center justify-between">
-                <h1 className="font-medium md:text-base text-sm text-black/90">
-                  {project.title}
-                </h1>
+                <div className="flex flex-row items-center justify-between">
+                  <h1 className="font-medium md:text-base text-sm text-black/90">
+                    {project.title}
+                  </h1>
 
-                <div className="flex flex-row items-center">
-                  {project.github && (
+                  <div className="flex flex-row items-center">
+                    {project.github && (
+                      <Link
+                        className="hover:scale-110 text-black p-1.5 rounded "
+                        href={project.github}
+                      >
+                        <Github className="h-4 w-4" />
+                      </Link>
+                    )}
                     <Link
                       className="hover:scale-110 text-black p-1.5 rounded "
-                      href={project.github}
+                      href={project.live}
                     >
-                      <Github className="h-4 w-4" />
+                      <ExternalLink className="h-4 w-4" />
                     </Link>
-                  )}
-                  <Link
-                    className="hover:scale-110 text-black p-1.5 rounded "
-                    href={project.live}
-                  >
-                    <ExternalLink className="h-4 w-4" />
-                  </Link>
+                  </div>
                 </div>
+                <p className="text-xs md:text-sm">{project.desc}</p>
               </div>
-              <p className="text-xs md:text-sm">{project.desc}</p>
-            </div>
-          ))}
+            ))}
+          </Fade>
         </div>
         {/* <div className="flex flex-col">
           {projects.map((project) => (
@@ -208,59 +225,77 @@ function Projects() {
       </section>
 
       <section className="md:px-7 px-4">
-        <p className="text-sm md:text-lg font-semibold">Freelance</p>
+        <Fade
+          cascade={true}
+          damping={0.2}
+          duration={900}
+          fraction={0.5}
+          triggerOnce
+        >
+          <p className="text-sm md:text-lg font-semibold">Freelance</p>
+        </Fade>
         <div className="grid md:grid-cols-2 grid-cols-1 my-1 md:my-3 gap-3">
-          {FreelanceProjects.map((project) => (
-            <div
-              key={project.title}
-              className="flex flex-col p-2.5 group border rounded-md border-solid border-neutral-300"
-            >
-              <Link
-                href={project.live}
-                className="overflow-hidden rounded mb-2"
+          <Fade
+            cascade={true}
+            damping={0.2}
+            duration={900}
+            fraction={0.5}
+            triggerOnce
+          >
+            {FreelanceProjects.map((project) => (
+              <div
+                key={project.title}
+                className="flex flex-col p-2.5 group border rounded-md border-solid border-neutral-300"
               >
-                <Image
-                  src={project.img.src}
-                  alt={project.img.alt}
-                  height={500}
-                  width={500}
-                  priority
-                  className="h-[200px] w-full group-hover:scale-105 transition-all duration-500 object-cover"
-                />
-              </Link>
-              <div className="flex flex-row items-start justify-between">
-                <h1 className="font-medium text-black text-sm md:text-base">
-                  {project.title}
-                </h1>
+                <Link
+                  href={project.live}
+                  className="overflow-hidden rounded mb-2"
+                >
+                  <Image
+                    src={project.img.src}
+                    alt={project.img.alt}
+                    height={500}
+                    width={500}
+                    priority
+                    className="h-[200px] w-full group-hover:scale-105 transition-all duration-500 object-cover"
+                  />
+                </Link>
+                <div className="flex flex-row items-start justify-between">
+                  <h1 className="font-medium text-black text-sm md:text-base">
+                    {project.title}
+                  </h1>
 
-                <div className="flex flex-row items-center">
-                  <Link
-                    className="hover:scale-110 transition-all duration-500 text-black p-1.5 rounded "
-                    href={project.github}
-                  >
-                    <Github className="h-4 w-4" />
-                  </Link>
-                  <Link
-                    className="hover:scale-110 transition-all duration-500 text-black p-1.5 rounded "
-                    href={project.live}
-                  >
-                    <ExternalLink className="h-4 w-4" />
-                  </Link>
-                </div>
-              </div>
-              <div className="flex flex-row my-1 items-center gap-1 text-xs md:text-sm ">
-                {project.tags.map((tag) => (
-                  <div
-                    key={tag}
-                    className="cursor-pointer rounded-full px-4 py-0.5 border border-solid hover:text-black/80 hover:border-black/80 text-black/50 border-black/50 transition-all duration-500"
-                  >
-                    {tag}
+                  <div className="flex flex-row items-center">
+                    <Link
+                      className="hover:scale-110 transition-all duration-500 text-black p-1.5 rounded "
+                      href={project.github}
+                    >
+                      <Github className="h-4 w-4" />
+                    </Link>
+                    <Link
+                      className="hover:scale-110 transition-all duration-500 text-black p-1.5 rounded "
+                      href={project.live}
+                    >
+                      <ExternalLink className="h-4 w-4" />
+                    </Link>
                   </div>
-                ))}
+                </div>
+                <div className="flex flex-row my-1 items-center gap-1 text-xs md:text-sm ">
+                  {project.tags.map((tag) => (
+                    <div
+                      key={tag}
+                      className="cursor-pointer rounded-full px-4 py-0.5 border border-solid hover:text-black/80 hover:border-black/80 text-black/50 border-black/50 transition-all duration-500"
+                    >
+                      {tag}
+                    </div>
+                  ))}
+                </div>
+                <p className="text-black/50 text-xs md:text-sm">
+                  {project.desc}
+                </p>
               </div>
-              <p className="text-black/50 text-xs md:text-sm">{project.desc}</p>
-            </div>
-          ))}
+            ))}
+          </Fade>
         </div>
       </section>
     </>

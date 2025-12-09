@@ -1,4 +1,5 @@
 import React from "react";
+import { Fade } from "react-awesome-reveal";
 
 const experiences = [
   {
@@ -34,21 +35,38 @@ const experiences = [
 function Work() {
   return (
     <section className="md:px-7 px-4">
-      <p className="text-sm md:text-lg font-medium">Professional Experience</p>
+      <Fade
+        cascade={true}
+        damping={0.2}
+        duration={900}
+        fraction={0.5}
+        triggerOnce
+      >
+        <p className="text-sm md:text-lg font-medium">
+          Professional Experience
+        </p>
+      </Fade>
 
       {/* <p className={`text-sm md:text-[30px] font-medium ${fornier.className}`}>
         Professional Experience
       </p> */}
 
       <div className="flex flex-col my-1 md:my-3 border-t border-dotted border-neutral-300">
-        {experiences.map((experience, index) => (
-          <div
-            key={index}
-            className="flex flex-col items-center justify-between border-b border-dotted border-neutral-300 py-3"
-          >
-            <div className="flex flex-row items-center justify-between w-full mb-2">
-              <div className="flex flex-row items-center gap-2">
-                {/* <Image
+        <Fade
+          cascade={true}
+          damping={0.2}
+          duration={900}
+          fraction={0.5}
+          triggerOnce
+        >
+          {experiences.map((experience, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-center justify-between border-b border-dotted border-neutral-300 py-3"
+            >
+              <div className="flex flex-row items-center justify-between w-full mb-2">
+                <div className="flex flex-row items-center gap-2">
+                  {/* <Image
                   height={45}
                   width={45}
                   src={experience.img.src}
@@ -56,26 +74,27 @@ function Work() {
                   className="rounded-sm"
                   priority
                 /> */}
-                <h1 className="text-sm text-black md:text-base font-medium">
-                  {experience.title}
-                </h1>
+                  <h1 className="text-sm text-black md:text-base font-medium">
+                    {experience.title}
+                  </h1>
+                </div>
+                <p className="text-sm text-black/50">{experience.duration}</p>
               </div>
-              <p className="text-sm text-black/50">{experience.duration}</p>
+              <div className="text-black/50 text-xs md:text-sm md:px-7 px-4 w-full">
+                <ul className="text-xs md:text-sm">
+                  {experience.desc.map((desc) => {
+                    return (
+                      <li key={desc} className="list-disc">
+                        {desc}
+                      </li>
+                    );
+                  })}
+                </ul>
+                {/* <span className="md:hidden block">{experience.shortRole}</span> */}
+              </div>
             </div>
-            <div className="text-black/50 text-xs md:text-sm md:px-7 px-4 w-full">
-              <ul className="text-xs md:text-sm">
-                {experience.desc.map((desc) => {
-                  return (
-                    <li key={desc} className="list-disc">
-                      {desc}
-                    </li>
-                  );
-                })}
-              </ul>
-              {/* <span className="md:hidden block">{experience.shortRole}</span> */}
-            </div>
-          </div>
-        ))}
+          ))}
+        </Fade>
       </div>
     </section>
   );
