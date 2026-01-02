@@ -9,15 +9,16 @@ function Landing() {
   return (
     <div className="w-full overflow-hidden text-justify text-sm md:text-base">
       {/* <div className="w-full h-[250px] bg-red-800"></div> */}
-      {/* <Image
-        src={"/header.jpg"}
+      <Image
+        src={"/header1.jpg"}
         alt={"Header image"}
         width={750}
         height={250}
-        className="w-full h-[250px] object-cover relative"
-      />*/}
+        className="w-full h-[250px] object-cover relative my-10 header-image"
+      />
+
       {/* <div className="rounded-2xl h-28 w-28 relative -top-14 left-7 bg-yellow-500"></div> */}
-      <Fade duration={900} fraction={0.5} triggerOnce>
+      {/* <Fade duration={900} fraction={0.5} triggerOnce>
         <Image
           src={"/er2.jpg"}
           alt={"Me"}
@@ -25,7 +26,7 @@ function Landing() {
           height={112}
           className="rounded-2xl hover:scale-105 rotate-1 hover:rotate-3 transition-transform duration-500 h-32 w-28 relative object-cover left-4 md:left-7"
         />
-      </Fade>
+      </Fade> */}
       <div className="flex flex-row items-start justify-between md:px-7 px-4 relative my-4">
         <Fade duration={900} fraction={0.5} triggerOnce>
           <div>

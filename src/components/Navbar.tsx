@@ -7,9 +7,6 @@ function Navbar() {
     <>
       <div className="h-5 w-full transparent"></div>
       <nav className="flex md:px-7 flex-row items-center justify-between py-4 px-4 sticky top-0 left-0 right-0 bg-[--base] z-[500]">
-        <Link href="/" className={fornier.className + " text-2xl"}>
-          Mano
-        </Link>
         {/* <div className="flex flex-row"> */}
         {/* <Link
           href="/about"
@@ -19,13 +16,16 @@ function Navbar() {
         </Link> */}
         {/* <Socials className="flex flex-row items-center text-black/90" /> */}
         {/* </div> */}
-        <Link
+        {/* <Link
           href="https://github.com/Mano-08"
           target="_blank"
           className="text-sm underline underline-offset-2"
         >
           GitHub
         </Link>
+        <Link href="/" className={fornier.className + " text-2xl"}>
+          Mano
+        </Link> */}
       </nav>
     </>
   );

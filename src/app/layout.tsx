@@ -20,7 +20,7 @@ export default function RootLayout({
       <body
         className={`noise antialiased text ${inter.className} text-black/50 max-w-[2000px] w-screen md:w-[700px] mx-auto`}
       >
-        <Navbar />
+        {/* <Navbar /> */}
         {children}
         <Footer />
       </body>
