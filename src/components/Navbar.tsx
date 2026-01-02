@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import { fornier } from "@/app/fonts/fonts";
 
 function Navbar() {
