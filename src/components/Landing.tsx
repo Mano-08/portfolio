@@ -14,7 +14,7 @@ function Landing() {
         alt={"Header image"}
         width={750}
         height={250}
-        className="w-full h-[250px] object-cover relative my-10 header-image"
+        className="w-full h-[250px] object-cover relative mb-10 rounded-b-lg"
       />
 
       {/* <div className="rounded-2xl h-28 w-28 relative -top-14 left-7 bg-yellow-500"></div> */}
