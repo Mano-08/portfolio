@@ -3,31 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { Fade } from "react-awesome-reveal";
 
-const FreelanceProjects = [
-  {
-    title: "Mint for the Children",
-    desc: "",
-    tags: ["zora", "blockchain"],
-    img: {
-      src: "/projects/mint.png",
-      alt: "For the children",
-    },
-    github: "https://github.com/Nith567/mintForchildren",
-    live: "https://mint-forchildren.vercel.app/",
-  },
-  {
-    title: "50MM Collections",
-    desc: "",
-    tags: ["full-stack", "dApp"],
-    img: {
-      src: "/projects/smart.png",
-      alt: "50MM Collections",
-    },
-    github: "https://github.com/Mano-08/theSmartWallet",
-    live: "https://the-smart-wallet.vercel.app/",
-  },
-];
-
 type Project = {
   title: string;
   desc: string;
@@ -76,6 +51,16 @@ const projects: Project[] = [
     img: {
       src: "/projects/battleship.jpeg",
       alt: "Battleship Game",
+    },
+  },
+  {
+    title: "Mint for the Children",
+    desc: "'For The Children' is an NFT charity platform where minting digital art from featured artists raises funds for children in the Dominican Republic.",
+    github: "https://github.com/Nith567/mintForchildren",
+    live: "https://mint-forchildren.vercel.app/",
+    img: {
+      src: "/projects/mint.png",
+      alt: "For the children",
     },
   },
 ];
@@ -224,7 +209,7 @@ function Projects() {
         </div> */}
       </section>
 
-      <section className="md:px-7 px-4">
+      {/* <section className="md:px-7 px-4">
         <Fade
           cascade={true}
           damping={0.2}
@@ -297,7 +282,7 @@ function Projects() {
             ))}
           </Fade>
         </div>
-      </section>
+      </section> */}
     </>
   );
 }
