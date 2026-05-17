@@ -1,6 +1,6 @@
 import { ExternalLink, Github } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
+// import Image from "next/image";
 import { Fade } from "react-awesome-reveal";
 
 type Project = {
