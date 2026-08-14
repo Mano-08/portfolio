@@ -14,7 +14,7 @@ function Landing() {
         alt={"Header image"}
         width={750}
         height={250}
-        className="w-full h-[250px] object-cover relative mb-10 rounded-b-lg"
+        className="w-full h-[250px] object-cover relative mb-10 rounded-b-md"
       />
 
       {/* <div className="rounded-2xl h-28 w-28 relative -top-14 left-7 bg-yellow-500"></div> */}
@@ -31,11 +31,13 @@ function Landing() {
         <Fade duration={900} fraction={0.5} triggerOnce>
           <div>
             <h1
-              className={`font-bold text-[45px] text-black my-2 ${fornier.className}`}
+              className={`font-bold text-[55px] text-black my-3.5 ${fornier.className}`}
             >
               Mano
             </h1>
-            <p className="text-sm">21 &bull; engineer &bull; developer</p>
+            <p className="text-sm">
+              21 &bull; software engineer &bull; developer
+            </p>
           </div>
 
           <Socials className="flex flex-row items-center text-black/90" />
@@ -43,10 +45,10 @@ function Landing() {
       </div>
 
       <Fade duration={900} fraction={0.5} triggerOnce>
-        <div className="md:px-7 px-4">
+        <div className="md:px-7 px-4 text-xs md:text-sm">
           Hi! I am Mano, a Computer Science and Engineering undergraduate from
-          National Institute of Technology, Andhra Pradesh. Cryptography,
-          Blockchain, NLP/ML, and Web are my areas of interest.
+          National Institute of Technology, Andhra Pradesh. NLP/ML,
+          Cryptography, Blockchain, and Web are my areas of interest.
           <br /> <br />I like building{" "}
           <Link
             href="https://playbattleship.vercel.app/"

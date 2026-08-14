@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`noise antialiased text ${inter.className} text-black/50 max-w-[2000px] w-screen md:w-[700px] mx-auto`}
+        className={`noise antialiased text ${inter.className} text-black/50 max-w-[2000px] w-screen md:w-[775px] mx-auto`}
       >
         {/* <Navbar /> */}
         {children}

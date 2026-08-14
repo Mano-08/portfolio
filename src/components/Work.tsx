@@ -3,27 +3,37 @@ import { Fade } from "react-awesome-reveal";
 
 const experiences = [
   {
-    title: "Broadridge Financial Solutions",
-    duration: "January 2025 - Present",
-    // role: "Member Technical",
+    title: "Software Engineer",
+    org: "Broadridge",
+    duration: "August 2025 - Present",
     desc: [
-      `SWE intern; Winter 2025; Automated audit report generation with distributed pipelines.`,
-      `SWE; August 2025 to present; Optimizing Message Queue validation pipelines.`,
+      "Built fault-tolerant Kafka microservices & DR systems on AWS, saved $4.3M in potential losses and cut document turnaround time by 99% (8hrs → 1min).",
     ],
-    // shortRole: "Member Technical",
     img: {
       src: "/broadridge.jpeg",
-      alt: "Broadridge Financial Solutions",
+      alt: "Software Engineer at Broadridge",
     },
   },
   {
-    title: "TaskLabs Inc.",
-    duration: "March 2023 - August 2023",
-    // role: "SoftwaIntern",
+    title: "Software Engineer Intern",
+    duration: "January 2025 - July 2025",
+    org: "Broadridge",
     desc: [
-      `SDE intern; March to August 2023; Migrated backend service to WASM.`,
+      "Re-architected a Go-based CI/CD validation pipeline, slashing validation time by 73% and saving 400+ engineering hours/year.",
     ],
-    // shortRole: "Member Technical",?
+
+    img: {
+      src: "/broadridge.jpeg",
+      alt: "Software Engineer at Broadridge",
+    },
+  },
+  {
+    title: "Software Development Engineer Intern",
+    duration: "March 2023 - August 2023",
+    org: "TaskLabs.Inc",
+    desc: [
+      "Built a Git-like diff-only version-control engine for a notes app with reverse-patch rollback, and shipped WebAssembly-powered image processing that cut conversion time by 42%.",
+    ],
     img: { src: "/tasklabs.jpeg", alt: "TaskLabs Inc." },
   },
 ];
@@ -64,33 +74,27 @@ function Work() {
               key={index}
               className="flex flex-col items-center justify-between border-b border-dotted border-neutral-300 py-3"
             >
-              <div className="flex flex-row items-center justify-between w-full mb-2">
+              <div className="flex flex-row items-center justify-between w-full ">
                 <div className="flex flex-row items-center gap-2">
-                  {/* <Image
-                  height={45}
-                  width={45}
-                  src={experience.img.src}
-                  alt={experience.img.alt}
-                  className="rounded-sm"
-                  priority
-                /> */}
                   <h1 className="text-sm text-black md:text-base font-medium">
                     {experience.title}
                   </h1>
                 </div>
                 <p className="text-sm text-black/50">{experience.duration}</p>
               </div>
+              <div className="text-xs md:text-sm text-left w-full mb-2">
+                {experience.org}
+              </div>
               <div className="text-black/50 text-xs md:text-sm md:px-7 px-4 w-full">
                 <ul className="text-xs md:text-sm">
                   {experience.desc.map((desc) => {
                     return (
-                      <li key={desc} className="list-disc">
+                      <li key={desc} className="">
                         {desc}
                       </li>
                     );
                   })}
                 </ul>
-                {/* <span className="md:hidden block">{experience.shortRole}</span> */}
               </div>
             </div>
           ))}

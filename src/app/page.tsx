@@ -36,9 +36,8 @@ export default function Home() {
     <main className="flex flex-col gap-10">
       <Landing />
       <Work />
-      <OpenSource />
-
       <Projects />
+      <OpenSource />
     </main>
   );
 }
