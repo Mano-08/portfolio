@@ -14,6 +14,18 @@ type Project = {
 
 const projects: Project[] = [
   {
+    title: "Video to Documentation Generator",
+    desc: "Turns screen recordings into editable SOPs using Whisper, GPT-4o-mini, and Claude vision. Generates docs and helps update existing docs from new recordings.",
+    github: "https://github.com/Mano-08/diff-engine/",
+    live: "https://doc-diff-engine.vercel.app/",
+    video:
+      "https://res.cloudinary.com/djwhxlpk5/video/upload/v1787553556/diff-engine/video/cmt6v8bpc001hvf8pnwnnvvbj/cmt6v8bt2001ivf8pv1cqqziv/source.mp4",
+    img: {
+      src: "/projects/doc-diff.jpeg",
+      alt: "Video to Documentation Generator",
+    },
+  },
+  {
     title: "Play Battleship",
     desc: "A real-time online strategy game. Custom AI heuristic using Manhattan distance and orientation inference. 500+ users globally.",
     github: "https://github.com/Mano-08/battleship",
@@ -83,7 +95,7 @@ function Projects() {
         <p className="text-sm md:text-lg font-semibold">Projects</p>
       </Fade>
 
-      <div className="grid grid-cols-2 my-3 md:my-5 gap-3">
+      <div className="grid grid-cols-1 my-3 md:my-5 gap-3">
         <Fade
           cascade={true}
           damping={0.2}

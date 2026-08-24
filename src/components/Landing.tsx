@@ -35,8 +35,8 @@ function Landing() {
             >
               Mano
             </h1>
-            <p className="text-sm">
-              21 &bull; software engineer &bull; developer
+            <p className="md:text-sm text-xs">
+              22 &bull; software engineer &bull; developer
             </p>
           </div>
 
