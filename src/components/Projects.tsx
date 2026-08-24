@@ -15,7 +15,7 @@ type Project = {
 const projects: Project[] = [
   {
     title: "Video to Documentation Generator",
-    desc: "Turns screen recordings into editable SOPs using Whisper, GPT-4o-mini, and Claude vision. Generates docs and helps update existing docs from new recordings.",
+    desc: "Turns screen recordings into editable SOPs using Whisper, GPT-4o-mini, and Claude. Generates docs and helps update existing docs from new recordings.",
     github: "https://github.com/Mano-08/diff-engine/",
     live: "https://doc-diff-engine.vercel.app/",
     video:
@@ -39,7 +39,7 @@ const projects: Project[] = [
   },
   {
     title: "Zelix - Secure Bookmarks",
-    desc: "A privacy-focused bookmark manager chrome extension. Features E2EE (End to End Encryption). 2000+ Daily Active Users. 4.8 star rating.",
+    desc: "A privacy-focused bookmark manager chrome extension. Features E2EE (End to End Encryption). 7000+ Daily Active Users. 4.8 star rating.",
     github: null,
     video:
       "https://res.cloudinary.com/djwhxlpk5/video/upload/v1786733021/zelix_demo_j_r5xblt.mp4",
